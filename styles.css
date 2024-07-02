@@ -57,7 +57,7 @@ body {
 
 /* Footer styles */
 footer {
-    /* font-family: var(--footer-font-family); */
+    font-family: var(--footer-font-family);
     margin-top: 40px;
     background-color: var(--primary-color); /* dark grey */
     color: var(--hero-color); /* white */
