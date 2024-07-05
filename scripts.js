@@ -23,9 +23,13 @@ setInterval(nextSlide, 3000); // Зміна слайду кожні 3 секун
     document.getElementById('currentYear').textContent = `2000 - ${currentYear}`;
 
 
+searchInput.addEventListener("focus", function () {
+  this.placeholder = "";
+});
 
 
-// Код для обробки пошуку
+
+    // Код для обробки пошуку
 
 document.addEventListener("DOMContentLoaded", function () {
   var searchForm = document.getElementById("searchForm");
