@@ -36,7 +36,9 @@
         </div>
     </header>
     <main class="container my-4">
-        <button class="btn btn-secondary mb-4" id="backToList">До списку публікацій</button>
+        <a href="courses.html">
+            <button class="btn btn-secondary mb-4" id="backToList">До списку публікацій</button>
+        </a>
         <h2>Результати пошуку</h2>
         <div class="search-bar mb-4">
             <form id="searchForm" class="form-inline">
@@ -52,7 +54,8 @@
         <button class="btn btn-primary" id="loadMore" style="display: none;">Завантажити ще</button>
     </main>
     <footer class="bg-dark text-white text-center p-3">
-        <p>&copy; 2024 Кафедра Комп'ютерних Наук</p>
+        <p>&copy; <span id="currentYear"></span> Кафедра Комп'ютерних Наук, Університет ХХХ</p>
+        <p>Email: info@university.edu | Телефон: +38 (044) 123-45-67 | Адреса: вул. Академічна, 12, м. Київ, Україна</p>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>

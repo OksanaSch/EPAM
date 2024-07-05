@@ -18,6 +18,12 @@ setInterval(nextSlide, 3000); // Зміна слайду кожні 3 секун
 
 
 
+// Динамічне оновлення року у футері
+    var currentYear = new Date().getFullYear();
+    document.getElementById('currentYear').textContent = `2000 - ${currentYear}`;
+
+
+
 
 // Код для обробки пошуку
 
