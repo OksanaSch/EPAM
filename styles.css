@@ -1,13 +1,13 @@
 :root {
-  --primary-font-family: Arial, sans-serif;
-  --footer-font-family: "Roboto", sans-serif;
+  --primary-font-family: Alegreya;
   --hero-color: #ffffff;
   --primary-color: #000000;
-  --secondary-color: #a2c4e4;
-  --step-color: #1384EE;
+  --secondary-color: #badbfa;
+  --step-color: #0857ff;
+  
 }
 /* Пропустити до основного вмісту */
-.skip-to-main-content-link {
+/* .skip-to-main-content-link {
   position: absolute;
   left: -9999px;
   z-index: 999;
@@ -19,8 +19,10 @@
 .skip-to-main-content-link:focus {
   left: 50%;
   transform: translateX(-50%);
-  opacity: 1;
-}
+  opacity: 1; */
+/* } */
+
+
 /* Global styles */
 body {
     font-family: var(--primary-font-family);
@@ -39,14 +41,21 @@ header{
     width: 50px;
 }
 h1{
+    padding-top: 30px;
     font-size: 24px;
-     color: var(--step-color); 
+    font-weight: 500;
+    color: var(--step-color); 
 }
 h2{
-    font-size: 14px;
-    font-weight: bold;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 19.05px;
+    text-align: left;
+
 }
 h3{
+    font-size: 24px;
+    font-weight: medium;
     color: var(--step-color);
     text-align: center;
     padding: 20px;
@@ -58,26 +67,41 @@ h5{
 }
 .navbar-dark .navbar-nav .nav-link {
     color: var(--primary-color); 
+    font-size: 18px;
+    font-weight: medium;
 }
 
+
 .navbar-dark .navbar-nav .nav-link:hover {
-    color: var(--step-color); 
+    color: var(--step-color);
 }
 
 #active-link {
   color: var(--step-color);
   text-decoration: underline;
+  font-weight: 600;
 }
 
 
 /* Main content styles */
 .greeting {
-    background-color: #ccccd5;
+    background-color: #eeeef0;
     height: 198px;
 }
 .greeting-img{
     width: 417px;
     height: 198px;
+}
+.greeting-text{
+    font-size: 14px;
+    font-weight: medium;
+}
+.greeting-list{
+    font-size: 14px;
+    font-weight: medium;
+    line-height: 19.05px;
+    text-align: left;
+
 }
 .news {
     margin-top: 40px;
@@ -89,7 +113,12 @@ h5{
 }
 
 .card-title {
-    color: var(--step-color); /* blue */
+    color: var(--step-color);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 27.22px;
+    text-align: center;
+
 }
 
 .card-text {
