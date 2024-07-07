@@ -2,49 +2,90 @@
   --primary-font-family: Arial, sans-serif;
   --footer-font-family: "Roboto", sans-serif;
   --hero-color: #ffffff;
-  --primary-color: #343a40;
-  --secondary-color: #adb5bd;
-  --step-color: #7ba2bc;
+  --primary-color: #000000;
+  --secondary-color: #a2c4e4;
+  --step-color: #1384EE;
 }
-
-
+/* Пропустити до основного вмісту */
+.skip-to-main-content-link {
+  position: absolute;
+  left: -9999px;
+  z-index: 999;
+  padding: 1em;
+  background-color: black;
+  color: white;
+  opacity: 0;
+}
+.skip-to-main-content-link:focus {
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 1;
+}
 /* Global styles */
 body {
     font-family: var(--primary-font-family);
     line-height: 1.6;
+    color: var(--primary-color);
 }
 
 /* Header styles */
-.navbar {
-    background-color: var(--primary-color); /* dark grey */
+header{
+    background-color: var(--secondary-color);
+    height: 54px;
+    
 }
-
+.logo{
+    height: 44px;
+    width: 50px;
+}
+h1{
+    font-size: 24px;
+     color: var(--step-color); 
+}
+h2{
+    font-size: 14px;
+    font-weight: bold;
+}
+h3{
+    color: var(--step-color);
+    text-align: center;
+    padding: 20px;
+}
+h5{
+    color: var(--primary-color);
+    font-size: 20px;
+    font-weight: medium;
+}
 .navbar-dark .navbar-nav .nav-link {
-    color: var(--hero-color); /* white */
+    color: var(--primary-color); 
 }
 
 .navbar-dark .navbar-nav .nav-link:hover {
-    color: var(--secondary-color); /* light grey */
+    color: var(--step-color); 
 }
 
 #active-link {
-  color: var(--secondary-color) !important;
+  color: var(--step-color);
   text-decoration: underline;
 }
 
 
 /* Main content styles */
-.jumbotron {
-    background-color: var(--step-color); /* blue */
-    color: var(--hero-color); /* white */
+.greeting {
+    background-color: #ccccd5;
+    height: 198px;
 }
-
+.greeting-img{
+    width: 417px;
+    height: 198px;
+}
 .news {
     margin-top: 40px;
 }
 
 .card {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    
 }
 
 .card-title {
@@ -68,6 +109,6 @@ body {
 footer {
     font-family: var(--footer-font-family);
     margin-top: 40px;
-    background-color: var(--primary-color); /* dark grey */
-    color: var(--hero-color); /* white */
+    background-color: var(--secondary-color); /* dark grey */
+    color: var(--primary-color); /* white */
 }

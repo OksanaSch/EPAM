@@ -10,101 +10,83 @@
 </head>
 
 <body>
-    <header class="bg-dark sticky-top text-white p-3">
-        <div class="container">
-            <div class="d-flex justify-content-between align-items-center">
+    <header class="sticky-top d-flex justify-content-between">
+        <div class="d-flex justify-content-center p-1">
                 <a href="index.html">
-                    <img src="logo.png" alt="Логотип" class="logo ml-sm-5" width="50" height="50" >
+                    <img src="logo.png" class="logo pl-2" alt="Логотип кафедриінфоривційних технологій">
                 </a>
-                <h1>Кафедра Комп'ютерних Наук</h1>
-            </div>
-            <nav class="navbar navbar-expand-md navbar-dark">
+                <h2 class="pl-5 pt-2">Кафедра <br> інформаційних технологій</h2>
+        </div>
+        <nav class="navbar navbar-dark navbar-expand-md">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon pl-5"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="collapse navbar-collapse text-white" id="navbarNav">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item"><a class="nav-link" href="index.html" id="active-link" >Про факультет</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html" id="active-link" >Про кафедру</a></li>
                         <li class="nav-item"><a class="nav-link" href="news.html">Новини</a></li>
                         <li class="nav-item"><a class="nav-link" href="administration.html">Адміністрація</a></li>
                         <li class="nav-item"><a class="nav-link" href="courses.html">Наукова робота</a></li>
                         <li class="nav-item"><a class="nav-link" href="contact.html">Контакти</a></li>
                     </ul>
                 </div>
-            </nav>
-        </div>
+        </nav>
+        
     </header>
     <main class="container my-4">
-        <section class="jumbotron text-center">
-            <h2>Ласкаво просимо!</h2>
-            <p class="lead">Вітаємо вас на сайті кафедри комп'ютерних наук. Тут ви знайдете інформацію про наші курси,
-                викладачів та інші корисні ресурси.</p>
-        </section>
-        <section id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="image1.jpg" class="d-block w-100" alt="Студенти на заняттях">
+        <section class="container d-flex ">
+            <div>
+                <img class="greeting-img" src="img/main-img.png" alt="">
+            </div>
+            <div class="container ml-5">
+                <h1>Вітаємо на кафедрі інформаційних технологій!</h1>
+                
+                <p class="greeting-text">Вітаємо вас на сайті кафедри комп'ютерних наук.</p>
+                <ul>
+                    <li>Lorem ipsum dolor si sequi quidemerspicia</li>
+                    <li>Lorem ipsum dolor si sequi quidemerspicia</li>
+                    <li>Lorem ipsum dolor si sequi quidemerspicia</li>
+                </ul>
+            </div>
+        </section>   
+
+        <section class="about" >
+            <h3>Життя кафедри</h3>
+            <div class="card-deck">
+                <div class="card">
+                    <img src="teacher1.jpg" class="card-img-top" alt="Фото викладача">
+                    <div class="card-body">
+                        <h5 class="card-title">Сертифікати</h5>
+                        <p class="card-text">Пройди навчання та отримай сертифікати від
+                        партнерів кафедри - компанії FreshCode та PMI</p>
+                    </div>
                 </div>
-                <div class="carousel-item">
-                    <img src="image2.jpg" class="d-block w-100" alt="Лабораторія комп'ютерних наук">
+                <div class="card">
+                    <img src="teacher2.jpg" class="card-img-top" alt="Фото викладача">
+                    <div class="card-body">
+                        <h5 class="card-title">Наукова робота зі студентами</h5>
+                        <p class="card-text">Прийми участь у роботі науково-практичних
+                        всеукраїнских та міжнародних семінарів та
+                        конференцій.</p>
+                    </div>
                 </div>
-                <div class="carousel-item">
-                    <img src="image3.jpg" class="d-block w-100" alt="Заняття з програмування">
+                <div class="card">
+                    <img src="teacher3.jpg" class="card-img-top" alt="Фото викладача">
+                    <div class="card-body">
+                        <h5 class="card-title">Досвід випускників кафедри</h5>
+                        <p class="card-text">Зустріч із випускниками кафедри інформаційних
+                        технологій. Дізнайся про їх кар’єрний шлях та
+                        отримай поради, як знайти свою першу роботу.</p>
+                    </div>
                 </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Попередній</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Наступний</span>
-            </a>
         </section>
-        <h2>Про нас</h2>
-        <p>Кафедра комп'ютерних наук була заснована у 1995 році. Наша місія - підготовка висококваліфікованих
-            спеціалістів у галузі інформаційних технологій.</p>
-        <section class="mission">
-            <h3>Місія</h3>
-            <p>Забезпечити якісну освіту, сприяти розвитку інноваційних технологій та підтримувати наукові дослідження.
-            </p>
-        </section>
-        <section class="vision">
-            <h3>Візія</h3>
-            <p>Стати лідером у сфері комп'ютерних наук, виховувати талановитих фахівців та впливати на розвиток
-                IT-індустрії.</p>
-        </section>
-        <!-- <section class="news mt-4">
-            <h3>Останні новини</h3>
-            <div class="row">
-                <div class="col-md-6">
-                    <article class="card mb-4">
-                        <div class="card-body">
-                            <h4 class="card-title">Новий курс з машинного навчання</h4>
-                            <p class="card-text">Ми раді оголосити про новий курс з машинного навчання, який стартує
-                                наступного семестру.</p>
-                        </div>
-                    </article>
-                </div>
-                <div class="col-md-6">
-                    <article class="card mb-4">
-                        <div class="card-body">
-                            <h4 class="card-title">Запрошений лектор</h4>
-                            <p class="card-text">Відомий експерт у галузі штучного інтелекту проведе лекцію наступного
-                                тижня.</p>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section> -->
+
+        
+            
     </main>
-    <footer class="bg-dark text-white text-center p-3">
+    <footer class="text-center p-3">
         <p>&copy; <span id="currentYear"></span> Кафедра Комп'ютерних Наук, Університет ХХХ</p>
         <p>Email: info@university.edu | Телефон: +38 (044) 123-45-67 | Адреса: вул. Академічна, 12, м. Київ, Україна</p>
     </footer>
