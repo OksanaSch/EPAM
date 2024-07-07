@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Наукова робота</title>
+    <title>Результати пошуку</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -34,36 +34,28 @@
         </nav>
     
     </header>
-<main class="container my-4">
-        <h2>Наукова робота</h2>
-    <div class="search-bar mb-4">
-        <form id="searchForm" class="form-inline">
-            <input class="form-control mr-2" type="text" id="searchInput" placeholder="Введіть назву або ключове слово"
-                aria-label="Search">
-            <button class="btn btn-primary" type="submit">Шукати</button>
-        </form>
-    </div>
-        <div class="research-list">
-            <article class="card mb-4">
-                <div class="card-body">
-                    <h4 class="card-title">Дослідження у галузі машинного навчання</h4>
-                    <p class="card-text">Наші дослідження спрямовані на розвиток нових алгоритмів машинного навчання.</p>
-                </div>
-            </article>
-            <article class="card mb-4">
-                <div class="card-body">
-                    <h4 class="card-title">Розробка штучного інтелекту</h4>
-                    <p class="card-text">Ми працюємо над створенням інтелектуальних систем, які можуть аналізувати та обробляти великі обсяги даних.</p>
-                </div>
-            </article>
+    <main class="container my-4">
+        <a href="courses.html">
+            <button class="btn btn-secondary mb-4" id="backToList">До списку публікацій</button>
+        </a>
+        <h2>Результати пошуку</h2>
+        <div class="search-bar mb-4">
+            <form id="searchForm" class="form-inline">
+                <input class="form-control mr-2" type="text" id="searchInput" placeholder="Введіть текст для пошуку"
+                    aria-label="Search">
+                <button class="btn btn-primary" type="submit" id="searchButton">Шукати</button>
+            </form>
         </div>
+        <p id="resultCount"></p>
+        <div class="results-list">
+            <!-- Результати пошуку будуть динамічно додані сюди -->
+        </div>
+        <button class="btn btn-primary" id="loadMore" style="display: none;">Завантажити ще</button>
     </main>
-
-   
-   <footer class="text-center p-3">
-    <p>&copy; <span id="currentYear"></span> Кафедра Комп'ютерних Наук, Університет ХХХ</p>
-    <p>Email: info@university.edu | Телефон: +38 (044) 123-45-67 | Адреса: вул. Академічна, 12, м. Київ, Україна</p>
-</footer>
+    <footer class="text-center p-3">
+        <p>&copy; <span id="currentYear"></span> Кафедра Комп'ютерних Наук, Університет ХХХ</p>
+        <p>Email: info@university.edu | Телефон: +38 (044) 123-45-67 | Адреса: вул. Академічна, 12, м. Київ, Україна</p>
+    </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

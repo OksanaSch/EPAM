@@ -10,30 +10,29 @@
 </head>
 
 <body>
-    <header class="bg-dark sticky-top text-white p-3">
-        <div class="container">
-            <div class="d-flex justify-content-between align-items-center">
-                <a href="index.html">
-                    <img src="logo.png" alt="Логотип" class="logo ml-sm-5" width="50" height="50">
-                </a>
-                <h1>Кафедра Комп'ютерних Наук</h1>
-            </div>
-            <nav class="navbar navbar-expand-md navbar-dark">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item"><a class="nav-link" href="index.html">Про факультет</a></li>
-                        <li class="nav-item"><a class="nav-link" href="news.html">Новини</a></li>
-                        <li class="nav-item"><a class="nav-link" href="administration.html" id="active-link">Адміністрація</a></li>
-                        <li class="nav-item"><a class="nav-link" href="courses.html">Наукова робота</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contact.html">Контакти</a></li>
-                    </ul>
-                </div>
-            </nav>
+    <header class="sticky-top d-flex justify-content-between">
+        <div class="d-flex justify-content-center p-1">
+            <a href="index.html">
+                <img src="logo.png" class="logo pl-2" alt="Логотип кафедриінфоривційних технологій">
+            </a>
+            <h2 class="pl-5 pt-2">Кафедра <br> інформаційних технологій</h2>
         </div>
+        <nav class="navbar navbar-dark navbar-expand-md">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon pl-5"></span>
+            </button>
+            <div class="collapse navbar-collapse text-white" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Про кафедру</a></li>
+                    <li class="nav-item"><a class="nav-link" href="news.html">Новини</a></li>
+                    <li class="nav-item"><a class="nav-link" href="administration.html" id="active-link">Адміністрація</a></li>
+                    <li class="nav-item"><a class="nav-link" href="courses.html">Наукова робота</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Контакти</a></li>
+                </ul>
+            </div>
+        </nav>
+    
     </header>
     <main class="container my-4">
         <h2>Факультет</h2>
@@ -66,9 +65,10 @@
             </div>
         </section>
     </main>
-    <footer class="bg-dark text-white text-center p-3">
-        <p>&copy; 2024 Кафедра Комп'ютерних Наук</p>
-    </footer>
+<footer class="text-center p-3">
+    <p>&copy; <span id="currentYear"></span> Кафедра Комп'ютерних Наук, Університет ХХХ</p>
+    <p>Email: info@university.edu | Телефон: +38 (044) 123-45-67 | Адреса: вул. Академічна, 12, м. Київ, Україна</p>
+</footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
