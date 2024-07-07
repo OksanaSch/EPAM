@@ -1,36 +1,41 @@
 import Image from "next/image";
-import { styles} from "./page.module.css";
+import  {headerContainer, logo, mainHeader, pageNavigation, pageNavigationList, menuItem, navLink, greetingContainer, imageTechnologies} from "./page.module.css";
 
 export default function Home() {
 	return (
 		<>
-    <header class="sticky-top d-flex justify-content-between">
-        <div class="d-flex justify-content-center p-1">
+    <header>
+        <div className={headerContainer}>
             <a href="index.html">
-                <img src="https://www.svgrepo.com/show/293955/university.svg" class="logo pl-2" alt="Логотип кафедри інфоривційних технологій" height="20" width="20"/>
+						<img src="https://www.svgrepo.com/show/293955/university.svg" className={logo } alt="Логотип кафедри інфоривційних технологій"/>
             </a>
-            <h2 class="pl-5 pt-2">Кафедра інформаційних технологій</h2>
-        </div>
-        <nav class="navbar navbar-dark navbar-expand-md">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon pl-5"></span>
-            </button>
-            <div class="collapse navbar-collapse text-white" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Про кафедру</a></li>
-                    <li class="nav-item"><a class="nav-link" href="news.html">Новини</a></li>
-                    <li class="nav-item"><a class="nav-link" href="administration.html" id="active-link">Адміністрація</a></li>
-                    <li class="nav-item"><a class="nav-link" href="courses.html">Наукова робота</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Контакти</a></li>
+					<h2 className={mainHeader}> Кафедра <br/> інформаційних технологій</h2>
+					 <nav className={pageNavigation}>
+
+                <ul className={pageNavigationList}>
+                    <li className={menuItem}><a class="navLink" href="index.html">Про кафедру</a></li>
+                    <li className={menuItem}><a class="navLink" href="news.html">Новини</a></li>
+                    <li className={menuItem}><a class="navLink" href="administration.html">Адміністрація</a></li>
+                    <li className={menuItem}><a class="navLink" href="courses.html">Наукова робота</a></li>
+                    <li className={menuItem}><a class="navLink" href="contact.html">Контакти</a></li>
                 </ul>
-            </div>
-        </nav>
+
+       		 </nav>
+        </div>
 
     </header>
-    <main class="container my-4">
-        <h2>Факультет</h2>
-        <p>Наш факультет складається з висококваліфікованих викладачів та науковців, які працюють у різних галузях комп'ютерних наук.</p>
+			<main>
+				<div className={greetingContainer}>
+					<img className={imageTechnologies} src="https://cdn.pixabay.com/photo/2021/05/19/06/13/smartphone-6265046_1280.jpg"></img>
+					<h2>Вітаємо на кафедрі інформаційних технологій!</h2>
+					<ul>
+					Кафедра випускає фахівців, що здатні творити та застосовувати новітні ІТ-технології:
+						<li>фахівців, що обслуговують комп’ютерне обладнання та займаються іншими технічними розробками;</li>
+						<li>фахівців, що створюють програмне забезпечення;</li>
+						<li>фахівців, що працюють з готовими інформаційними продуктами.</li>
+					</ul>
+				</div>
+
         <section class="faculty-members">
             <h3>Викладачі</h3>
             <div class="card-deck">
