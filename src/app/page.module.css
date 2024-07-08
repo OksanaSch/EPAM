@@ -1,10 +1,8 @@
 .headerContainer {
-
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-
   display: flex;
   height: 54px;
   background-color: #1384EE;
@@ -48,4 +46,71 @@
 
 .imageTechnologies {
   width: 800px;
+}
+.facultyLife {
+  color: #1384ff;
+  text-align: center;
+  font-size: 24px;
+  font-weight: medium;
+  padding-top: 20px;
+  padding-bottom: 39px;
+}
+
+.cards{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-bottom: 67px;
+  font-family: Alegreya;
+}
+  
+.card {
+  text-align: center;
+    margin: 0 10px;
+}
+.card h5 {
+  font-size: 18px;
+  font-weight: medium;
+  text-align: center;
+  margin: 10px 0;
+}
+.card img{
+    width: 231px;
+    height: 114px;
+    border: 1px solid #ddd;
+}
+.card p{
+  height: 57px;
+  width: 305px;
+  font-size: 14px;
+  font-weight: medium;
+  margin-top: 30px;
+  margin-left: 20px;
+  text-align: start;
+ 
+}
+
+.footerContainer{
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  height: 54px;
+  background-color: #1384EE;
+}
+
+.footerContainer p{
+  font-size: 14px;
+}
+
+.contacts {
+display: flex;
+justify-content: space-around;
+}
+
+.contacts p{
+  margin-right: 40px;
+  font-weight: medium;
 }
