@@ -14,6 +14,7 @@ import {
   card,
   footerContainer,
   contacts,
+  activeLink
 } from "./page.module.css";
 
 export default function Home() {
@@ -35,7 +36,7 @@ export default function Home() {
           <nav className={pageNavigation}>
             <ul className={pageNavigationList}>
               <li className={menuItem}>
-                <a class="navLink" href="index.html">
+                <a class="navLink" href="index.html" id={activeLink}>
                   Про кафедру
                 </a>
               </li>
@@ -124,7 +125,8 @@ export default function Home() {
       </main>
       <footer className={footerContainer}>
         <h5>
-          &copy;Кафедра Комп'ютерних Наук,Університет ХХХ<br></br>
+          &copy;Національний університет “Політехніка”
+          <br></br>
           <span id="currentYear">1900-2024</span>
         </h5>
         <div className={contacts}>

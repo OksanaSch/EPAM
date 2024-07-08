@@ -40,6 +40,16 @@
   padding-bottom: 16px;
 }
 
+.pageNavigation a:hover{
+  color: white;
+}
+
+#activeLink{
+  color: white;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
 .greetingContainer {
   display:flex;
 }
