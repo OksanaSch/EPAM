@@ -22,7 +22,7 @@ export default function Home() {
     <>
       <header>
         <div className={headerContainer}>
-          <a href="index.html">
+          <a href="/">
             <img
               src="https://www.svgrepo.com/show/293955/university.svg"
               className={logo}
