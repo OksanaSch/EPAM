@@ -91,8 +91,8 @@ export default function Home() {
 
 				<section>
 					<h3 className={facultyLife}>Життя кафедри</h3>
-					<div className={cards}>
-						<div className={card}>
+					<ul className={cards}>
+						<li className={card}>
 							<h5>Сертифікати</h5>
 							<img
 								src="/img/certificate.png"
@@ -102,8 +102,8 @@ export default function Home() {
 								Пройди навчання та отримай сертифікати від партнерів кафедри -
 								компанії FreshCode та PMI
               </p>
-						</div>
-						<div className={card}>
+						</li>
+						<li className={card}>
 							<h5>Наукова робота зі студентами</h5>
 							<img
 								src="/img/image3.jpg"
@@ -113,8 +113,8 @@ export default function Home() {
 								Прийми участь у роботі науково-практичних всеукраїнских та
 								міжнародних семінарів та конференцій.
               </p>
-						</div>
-						<div className={card}>
+						</li>
+						<li className={card}>
 							<h5>Досвід випускників кафедри</h5>
 							<img
 								src="/img/image1.jpg"
@@ -125,8 +125,8 @@ export default function Home() {
 								Дізнайся про їх кар’єрний шлях та отримай поради, як знайти свою
 								першу роботу.
               </p>
-						</div>
-					</div>
+						</li>
+					</ul>
 				</section>
 			</main>
 			<footer className={footerContainer}>

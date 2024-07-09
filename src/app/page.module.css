@@ -104,6 +104,7 @@ min-height: 100vh;
 
 .card {
   margin: 0 10px;
+  list-style-type: none;
 }
 
 .card h5 {
