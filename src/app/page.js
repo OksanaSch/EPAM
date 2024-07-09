@@ -1,5 +1,6 @@
 import Image from "next/image";
 import {
+	bodyContainer,
 	headerContainer,
 	logo,
 	mainHeader,
@@ -9,6 +10,8 @@ import {
 	navLink,
 	heroContainer,
 	heroContent,
+	heroGreeting,
+	heroListItem,
 	imageTechnologies,
 	facultyLife,
 	cards,
@@ -20,7 +23,7 @@ import {
 
 export default function Home() {
 	return (
-		<>
+		<div className={bodyContainer}>
 			<header>
 				<div className={headerContainer}>
 					<a href="/">
@@ -31,7 +34,6 @@ export default function Home() {
 						/>
 					</a>
 					<h2 className={mainHeader}>
-						{" "}
             Кафедра <br /> інформаційних технологій
           </h2>
 					<nav className={pageNavigation}>
@@ -73,16 +75,16 @@ export default function Home() {
 
 					></img>
 					<div className={heroContent}>
-						<h2>Вітаємо на кафедрі інформаційних технологій!</h2>
+						<h2 className={heroGreeting}>Вітаємо на кафедрі інформаційних технологій!</h2>
 						<ul>
 							Кафедра випускає фахівців, що здатні творити та застосовувати
 							новітні ІТ-технології:
-            <li>
+            <li className={heroListItem}>
 								фахівців, що обслуговують комп’ютерне обладнання та займаються
 								іншими технічними розробками;
             </li>
-							<li>фахівців, що створюють програмне забезпечення;</li>
-							<li>фахівців, що працюють з готовими інформаційними продуктами.</li>
+							<li className={heroListItem}>фахівців, що створюють програмне забезпечення;</li>
+							<li className={heroListItem}>фахівців, що працюють з готовими інформаційними продуктами.</li>
 						</ul>
 					</div>
 
@@ -146,6 +148,6 @@ export default function Home() {
           </p>
 				</div>
 			</footer>
-		</>
+		</div>
 	);
 }
