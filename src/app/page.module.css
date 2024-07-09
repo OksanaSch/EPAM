@@ -2,7 +2,9 @@
   max-width: 1200px;
   display: block;
   margin: 0 auto;
-  font-family: Alegreya;
+min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .headerContainer {
@@ -12,8 +14,9 @@
   margin-right: auto;
   display: flex;
   height: 54px;
-  background-color: #1384EE;
+  background-color: #002B6E;
   align-items: center;
+  color: white;
 }
 
 .logo {
@@ -24,7 +27,7 @@
 
 .mainHeader {
   margin-left: 40px;
-  font-size: 14px;
+  font-size: 16px;
   padding-top: 8px;
   padding-bottom: 8px;
 }
@@ -72,7 +75,7 @@
 
 .heroGreeting {
   padding-bottom: 20px;
-  color: #0957FF;
+  color: #002B6E;
 }
 
 .heroListItem {
@@ -84,7 +87,7 @@
 }
 
 .facultyLife {
-  color: #1384ff;
+  color: #002B6E;
   text-align: center;
   font-size: 24px;
   font-weight: medium;
@@ -100,19 +103,17 @@
 }
 
 .card {
-  text-align: center;
-    margin: 0 10px;
+  margin: 0 10px;
 }
+
 .card h5 {
   font-size: 18px;
-  font-weight: medium;
-  text-align: center;
   margin: 10px 0;
 }
 .card img{
-    width: 231px;
-    height: 114px;
-    border: 1px solid #ddd;
+  width: 231px;
+  height: 114px;
+  border: 1px solid #ddd;
 }
 .card p{
   height: 57px;
@@ -120,20 +121,21 @@
   font-size: 14px;
   font-weight: medium;
   margin-top: 30px;
-  margin-left: 20px;
   text-align: start;
 
 }
 
 .footerContainer{
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
+  height: 80px;
+  background-color: #002B6E;
+  color: white;
+  margin-top: auto;
+}
+
+.footerContentContainer {
+ padding: 16px 15px;
   display: flex;
   justify-content: space-between;
-  height: 54px;
-  background-color: #1384EE;
 }
 
 .footerContainer h5{

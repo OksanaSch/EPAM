@@ -1,4 +1,5 @@
 import Image from "next/image";
+
 import {
 	bodyContainer,
 	headerContainer,
@@ -17,6 +18,7 @@ import {
 	cards,
 	card,
 	footerContainer,
+	footerContentContainer,
 	contacts,
 	activeLink
 } from "./page.module.css";
@@ -27,11 +29,8 @@ export default function Home() {
 			<header>
 				<div className={headerContainer}>
 					<a href="/">
-						<img
-							src="https://www.svgrepo.com/show/293955/university.svg"
-							className={logo}
-							alt="Логотип кафедри інфоривційних технологій"
-						/>
+						<Image className={ logo} src="/university.svg" height={54} width={48} alt="go to homepage"/>
+
 					</a>
 					<h2 className={mainHeader}>
             Кафедра <br /> інформаційних технологій
@@ -131,22 +130,24 @@ export default function Home() {
 				</section>
 			</main>
 			<footer className={footerContainer}>
-				<h5>
+				<div className={footerContentContainer}>
+					<h5>
 					&copy;Національний університет “Політехніка”
-          <br></br>
 					<span id="currentYear">1900-2024</span>
 				</h5>
 				<div className={contacts}>
 					<p>
-						Адреса: <br></br>вул. Академічна, 12, м. Київ, Україна
+						вул. Академічна, 12, м. Київ, Україна
           </p>
 					<p>
-						Телефон: <br></br> +38 (044) 123-45-67
+						 +38 (044) 123-45-67
           </p>
 					<p>
-						Email: <br></br> info@university.edu
+						info@university.edu
           </p>
 				</div>
+				</div>
+
 			</footer>
 		</div>
 	);
