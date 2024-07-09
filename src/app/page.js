@@ -49,7 +49,7 @@ export default function Home() {
                 </a>
 							</li>
 							<li className={menuItem}>
-								<a class="navLink" >
+								<a className={navLink} >
 									Адміністрація
                 </a>
 							</li>
@@ -92,7 +92,7 @@ export default function Home() {
 
 				<section>
 					<h3 className={facultyLife}>Життя кафедри</h3>
-					<div class={cards}>
+					<div className={cards}>
 						<div className={card}>
 							<h5>Сертифікати</h5>
 							<img

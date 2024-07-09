@@ -2,7 +2,9 @@
   max-width: 1200px;
   display: block;
   margin: 0 auto;
+  font-family: Alegreya;
 }
+
 .headerContainer {
   padding-left: 15px;
   padding-right: 15px;
@@ -11,6 +13,7 @@
   display: flex;
   height: 54px;
   background-color: #1384EE;
+  align-items: center;
 }
 
 .logo {
@@ -94,7 +97,6 @@
   justify-content: space-around;
   width: 100%;
   margin-bottom: 67px;
-  font-family: Alegreya;
 }
 
 .card {
