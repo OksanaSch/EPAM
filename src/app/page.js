@@ -8,12 +8,13 @@ import heroImage from "../../public/img/technologies.jpg";
 import Header from "./components/header/header";
 import Footer from "./components/footer/footer";
 import PublicationArticle from "./components/publscationArticle/publscationArticle";
-
+import SearchPublication from "./components/searchPublication/searchPublication"
 import {
 	bodyContainer,
 	facultyLife,
 	cards,
 	card,
+	searchPublication,
 } from "./page.module.css";
 import Hero from "./hero";
 
@@ -73,7 +74,10 @@ export default async function Home() {
 						</li>
 					</ul>
 				</section>
-				<PublicationArticle/>	
+				
+
+					<SearchPublication/>
+					<PublicationArticle/>	
 
 			</main>
 						<Footer/>
