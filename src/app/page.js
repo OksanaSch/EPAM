@@ -1,4 +1,6 @@
 import Image from "next/image";
+import "./globals.css";
+import laptop from "../../public/svg/laptop.svg";
 
 import {
 	bodyContainer,
@@ -29,7 +31,7 @@ export default function Home() {
 			<header>
 				<div className={headerContainer}>
 					<a href="/">
-						<Image className={ logo} src="/university.svg" height={54} width={48} alt="go to homepage"/>
+						<Image className={ logo} src={laptop}  alt="go to homepage"/>
 
 					</a>
 					<h2 className={mainHeader}>

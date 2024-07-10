@@ -2,7 +2,7 @@
   max-width: 1200px;
   display: block;
   margin: 0 auto;
-min-height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
@@ -14,15 +14,16 @@ min-height: 100vh;
   margin-right: auto;
   display: flex;
   height: 54px;
-  background-color: #002B6E;
+  background-color: var(--background-header-footer);
   align-items: center;
   color: white;
 }
 
 .logo {
-  height: 54px;
-  width: 48px;
-  padding: 8px 0;
+  height: 67px;
+  width: 67px;
+  margin-left: 41px;
+  margin-top: 8px;
 }
 
 .mainHeader {
@@ -75,7 +76,7 @@ min-height: 100vh;
 
 .heroGreeting {
   padding-bottom: 20px;
-  color: #002B6E;
+  color: var(--background-header-footer);
 }
 
 .heroListItem {
@@ -87,7 +88,7 @@ min-height: 100vh;
 }
 
 .facultyLife {
-  color: #002B6E;
+  color: var(--background-header-footer);
   text-align: center;
   font-size: 24px;
   font-weight: medium;
@@ -129,7 +130,7 @@ min-height: 100vh;
 
 .footerContainer{
   height: 80px;
-  background-color: #002B6E;
+  background-color: var(--background-header-footer);
   color: white;
   margin-top: auto;
 }
