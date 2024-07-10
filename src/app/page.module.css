@@ -7,30 +7,6 @@
   flex-direction: column;
 }
 
-.heroContainer {
-  display: flex;
-  max-width: 100%;
-}
-
-.heroContent {
-  width: 100%;
-  padding: 20px;
-  margin: auto 0 auto 44px;
-}
-
-.heroGreeting {
-  padding-bottom: 20px;
-  color: var(--background-header-footer);
-}
-
-.heroListItem {
-  margin-left: 15px;
-}
-
-.imageTechnologies {
-  width: 50%;
-}
-
 .facultyLife {
   color: var(--background-header-footer);
   text-align: center;
