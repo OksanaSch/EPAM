@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 import Image from "next/image";
 import "./globals.css";
 import Header from "./components/header/header";
