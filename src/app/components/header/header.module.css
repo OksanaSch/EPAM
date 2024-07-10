@@ -1,0 +1,55 @@
+.headerContainer {
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	height: 54px;
+	background-color: var(--background-header-footer);
+	align-items: center;
+	color: white;
+}
+
+.logo {
+	height: 67px;
+	width: 67px;
+	margin-left: 41px;
+	margin-top: 8px;
+}
+
+.mainHeader {
+	margin-left: 40px;
+	font-size: 16px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+
+.pageNavigation {
+	margin-left: auto;
+	align-items: center;
+}
+
+.pageNavigationList {
+	display: flex;
+	list-style: none;
+}
+
+.pageNavigation .menuItem+.menuItem {
+	margin-left: 40px;
+}
+
+.pageNavigation a {
+	display: inline-block;
+	padding-top: 16px;
+	padding-bottom: 16px;
+}
+
+.pageNavigation a:hover {
+	color: white;
+}
+
+.activeLink {
+	color: white;
+	text-decoration: underline;
+	font-weight: 600;
+}

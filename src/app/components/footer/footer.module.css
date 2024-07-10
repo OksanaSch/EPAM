@@ -1,0 +1,32 @@
+.footerContainer {
+	height: 80px;
+	background-color: var(--background-header-footer);
+	color: white;
+	margin-top: auto;
+}
+
+.footerContentContainer {
+	padding: 16px 15px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.footerContainer h5 {
+	margin-left: 40px;
+	margin-top: 10px;
+}
+
+.footerContainer p {
+	font-size: 14px;
+}
+
+.contacts {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 10px;
+}
+
+.contacts p {
+	margin-right: 40px;
+	font-weight: medium;
+}
