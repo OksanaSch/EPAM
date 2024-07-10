@@ -7,12 +7,13 @@ import heroImage from "../../public/img/technologies.jpg";
 
 import Header from "./components/header/header";
 import Footer from "./components/footer/footer";
+import PublicationArticle from "./components/publscationArticle/publscationArticle";
 
 import {
 	bodyContainer,
 	facultyLife,
 	cards,
-	card
+	card,
 } from "./page.module.css";
 import Hero from "./hero";
 
@@ -72,6 +73,8 @@ export default async function Home() {
 						</li>
 					</ul>
 				</section>
+				<PublicationArticle/>	
+
 			</main>
 						<Footer/>
 		</div>
