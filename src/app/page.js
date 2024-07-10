@@ -1,6 +1,7 @@
 import Image from "next/image";
 import "./globals.css";
 import laptop from "../../public/svg/laptop.svg";
+import heroImage from "../../public/img/technologies.jpg";
 
 import {
 	bodyContainer,
@@ -11,11 +12,6 @@ import {
 	pageNavigationList,
 	menuItem,
 	navLink,
-	heroContainer,
-	heroContent,
-	heroGreeting,
-	heroListItem,
-	imageTechnologies,
 	facultyLife,
 	cards,
 	card,
@@ -24,8 +20,19 @@ import {
 	contacts,
 	activeLink
 } from "./page.module.css";
+import Hero from "./hero";
 
-export default function Home() {
+import { promises as fs } from 'fs';
+async function getData() {
+ const path = process.cwd() + "/src/app/hero.json"
+  const file = await fs.readFile(path, "utf8");
+  const data = JSON.parse(file);
+  return data;
+}
+
+export default async function Home() {
+
+	const data = await getData();
 	return (
 		<div className={bodyContainer}>
 			<header>
@@ -69,28 +76,8 @@ export default function Home() {
 				</div>
 			</header>
 			<main>
-				<div className={heroContainer}>
-					<img
-						className={imageTechnologies}
-						src="https://cdn.pixabay.com/photo/2021/05/19/06/13/smartphone-6265046_1280.jpg"
 
-					></img>
-					<div className={heroContent}>
-						<h2 className={heroGreeting}>Вітаємо на кафедрі інформаційних технологій!</h2>
-						<ul>
-							Кафедра випускає фахівців, що здатні творити та застосовувати
-							новітні ІТ-технології:
-            <li className={heroListItem}>
-								фахівців, що обслуговують комп’ютерне обладнання та займаються
-								іншими технічними розробками;
-            </li>
-							<li className={heroListItem}>фахівців, що створюють програмне забезпечення;</li>
-							<li className={heroListItem}>фахівців, що працюють з готовими інформаційними продуктами.</li>
-						</ul>
-					</div>
-
-				</div>
-
+				<Hero image={heroImage } header={data[0].header} listHeader={data[0].listHeader} listItems={data[0].listItems} />
 				<section>
 					<h3 className={facultyLife}>Життя кафедри</h3>
 					<ul className={cards}>
