@@ -2,7 +2,6 @@ import Link from 'next/link'
 
 import Image from "next/image";
 import "./globals.css";
-import laptop from "../../public/svg/laptop.svg";
 import heroImage from "../../public/img/technologies.jpg";
 
 import Header from "./components/header/header";
@@ -14,7 +13,7 @@ import {
 	cards,
 	card
 } from "./page.module.css";
-import Hero from "./hero";
+import Hero from "./components/hero/hero";
 
 import { promises as fs } from 'fs';
 async function getData() {
