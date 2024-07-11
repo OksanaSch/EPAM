@@ -9,8 +9,8 @@ export default function Footer() {
 		<footer className={footerContainer}>
 				<div className={footerContentContainer}>
 					<h5>
-					© 1900-2024 Національний університет сингулярних технологій
-					<span id="currentYear">1900-2024</span>
+					©1900-2024 Національний університет сингулярних технологій
+					
 				</h5>
 				<div className={contacts}>
 
