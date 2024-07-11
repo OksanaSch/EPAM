@@ -1,26 +1,26 @@
 .bodyContainer {
-  max-width: 1200px;
+  max-width: 1366px;
   display: block;
   margin: 0 auto;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
-
-.facultyLife {
+.facultyLife  h3 {
   color: var(--background-header-footer);
   text-align: center;
   font-size: 24px;
-  font-weight: medium;
+  font-weight: 800;
   padding-top: 20px;
-  padding-bottom: 39px;
 }
 
 .cards{
   display: flex;
   justify-content: space-around;
   width: 100%;
-  margin-bottom: 67px;
+  margin-bottom: 30px;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 .card {
@@ -30,19 +30,22 @@
 }
 
 .card h5 {
-  font-size: 18px;
+  font-family: Raleway;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 18.78px; 
   margin: 10px 0;
 }
 .card img{
-  width: 305px;
-  height: 180px;
+  width: 420px;
+  height: 260px;
   border: 1px solid #ddd;
 }
 .card p{
-  height: 57px;
-  width: 305px;
+  height:48px;
+  width: 420px;
   font-size: 14px;
-  font-weight: medium;
-  margin-top: 30px;
+  font-weight: 500;
   text-align: start;
+  margin-top: 7px;
 }

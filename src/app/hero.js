@@ -12,6 +12,8 @@ export default async function Hero ({image, header, listHeader, listItems}) {
 		<div className={heroContainer}>
 			<Image className={imageTechnologies}
 				src={image}
+				width={484}
+				height={286}
 				alt="hero picture"/>
 					<div className={heroContent}>
 						<h2 className={heroGreeting}>{header}</h2>
