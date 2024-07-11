@@ -8,8 +8,8 @@ import {
 	pageNavigation,
 	pageNavigationList,
 	menuItem,
-	navLink
 } from "./header.module.css";
+import Link from "next/link";
 
 export default function Header() {
 	return (
@@ -23,31 +23,21 @@ export default function Header() {
           </h2>
 					<nav className={pageNavigation}>
 						<ul className={pageNavigationList}>
-							<li className={menuItem}>
-								<a className={navLink} >
+							<Link className={menuItem} href="/">
 									Про кафедру
-                </a>
-							</li>
-							<li className={menuItem}>
-								<a className={navLink} >
+							</Link>
+							<Link className={menuItem} href="">
 									Новини
-                </a>
-							</li>
-							<li className={menuItem}>
-								<a className={navLink} >
+							</Link>
+							<Link className={menuItem} href="">
 									Адміністрація
-                </a>
-							</li>
-							<li className={menuItem}>
-								<a className={navLink} >
+							</Link>
+							<Link className={menuItem} href="/scientificArticles">
 									Наукова робота
-                </a>
-							</li>
-							<li className={menuItem}>
-								<a className={navLink}>
+							</Link>
+							<Link className={menuItem} href="/contacts">
 									Контакти
-                </a>
-							</li>
+							</Link>
 						</ul>
 					</nav>
 				</div>
