@@ -3,7 +3,7 @@ import Link from 'next/link'
 import Image from "next/image";
 import "./globals.css";
 import laptop from "../../public/svg/laptop.svg";
-import heroImage from "../../public/img/technologies.jpg";
+import heroImage from "../../public/img/hero.png";
 
 import Header from "./components/header/header";
 import Footer from "./components/footer/footer";
@@ -14,7 +14,6 @@ import {
 	facultyLife,
 	cards,
 	card,
-	searchPublication,
 } from "./page.module.css";
 import Hero from "./hero";
 
@@ -35,49 +34,56 @@ export default async function Home() {
 			<main>
 
 				<Hero image={heroImage } header={data[0].header} listHeader={data[0].listHeader} listItems={data[0].listItems} />
-				<section>
-					<h3 className={facultyLife}>Життя кафедри</h3>
+				<section className={facultyLife}>
+					<h3>Життя кафедри</h3>
 					<ul className={cards}>
 						<li className={card}>
-							<h5>Сертифікати</h5>
-							<img
-								src="/img/certificate.png"
-								alt="Фото викладача"
+							<h5>Міжнародна діяльність кафедри</h5>
+							<Image
+								width={305} 
+								height= {180}
+								src="/img/international-conference.png"
+								alt="Фото з міжнародної конференції"
 							/>
 							<p>
-								Пройди навчання та отримай сертифікати від партнерів кафедри -
-								компанії FreshCode та PMI
-              </p>
+								Наша  кафедра  активно  співпрацює  з  провідними університетами   та   дослідницькими   центрами   по   всьому   світу, 
+								здійснюючи спільні наукові проєкти та обміни студентами.
+              				</p>
 						</li>
 						<li className={card}>
-							<h5>Наукова робота зі студентами</h5>
-							<img
-								src="/img/image3.jpg"
-								alt="Фото викладача"
+							<h5>Студентські R&D проєкти</h5>
+							<Image
+								width={305} 
+								height= {180}
+								src="/img/students.png"
+								alt="Студенти працюють за комп'ютерами"
 							/>
 							<p>
-								Прийми участь у роботі науково-практичних всеукраїнских та
-								міжнародних семінарів та конференцій.
-              </p>
+								Наші R&D проєкти - це унікальна можливість проявити свої 
+								знання  та  креативність,  працюючи  в команді  однодумців 
+								під керівництвом досвідчених наставників.
+							</p>
 						</li>
 						<li className={card}>
-							<h5>Досвід випускників кафедри</h5>
-							<img
-								src="/img/image1.jpg"
-								alt="Фото викладача"
+							<h5>Громадське життя студентської спільноти</h5>
+							<Image
+								width={305} 
+								height= {180}
+								src="/img/public-life.png"
+								alt="Студенти на громадському заході"
 							/>
 							<p>
-								Зустріч із випускниками кафедри інформаційних технологій.
-								Дізнайся про їх кар’єрний шлях та отримай поради, як знайти свою
-								першу роботу.
-              </p>
+								Студентська  спільнота  нашої  кафедри  активно бере участь 
+								у громадському житті, організовуючи численні заходи, клуби 
+								за інтересами та волонтерські проєкти.
+             				 </p>
 						</li>
 					</ul>
 				</section>
 				
 
-					<SearchPublication/>
-					<PublicationArticle/>	
+					{/* <SearchPublication/>
+					<PublicationArticle/>	 */}
 
 			</main>
 						<Footer/>
