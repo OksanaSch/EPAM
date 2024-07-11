@@ -1,0 +1,41 @@
+.publscationArticle{
+    background: #E0E8F2B0;
+    width: 375px;
+    height: 274px;
+    font-family: Open Sans;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 19.07px;
+    text-align: left;
+    margin: 60px;
+  }
+  
+  .publscationArticle h4 {
+    padding-top: 23px;
+    padding-left: 17px;
+    padding-right: 7px;
+    padding-bottom: 23px;
+  
+  }
+  .authorArticle {
+    padding-left: 18px;
+    margin-bottom: 22px;
+  }
+  .authorArticle span {
+     font-weight: 400;
+  }
+  .textArticle{
+    font-weight: 400;
+    padding-left: 18px;
+    padding-right: 8px;
+  }
+  
+  .publscationArticle button {
+    width: 304px;
+    height: 56px;
+    font-weight: 400px;
+    border: 3px solid #FFB109;
+    margin-top: 16px;
+    margin-left: 35px;
+    margin-right: 36px;
+  }
