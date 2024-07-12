@@ -1,7 +1,7 @@
 .heroContainer {
 	display: flex;
 	max-width: 100%;
-	
+
 	/* height: 285px; */
 	background-color:#52526233;
 	;
@@ -9,7 +9,7 @@
 
 .heroContent {
 	width: 100%;
-	margin: auto 0 auto 0;
+	margin: auto 0;
 }
 
 .heroGreeting {

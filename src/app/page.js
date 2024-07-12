@@ -1,4 +1,3 @@
-import Link from 'next/link'
 
 import Image from "next/image";
 import "./globals.css";
@@ -6,8 +5,6 @@ import heroImage from "../../public/img/hero.png";
 
 import Header from "./components/header/header";
 import Footer from "./components/footer/footer";
-import PublicationArticle from "./components/publscationArticle/publscationArticle";
-import SearchPublication from "./components/searchPublication/searchPublication"
 import {
 	bodyContainer,
 	facultyLife,
@@ -79,10 +76,6 @@ export default async function Home() {
 						</li>
 					</ul>
 				</section>
-
-
-					{/* <SearchPublication/>
-					<PublicationArticle/>	 */}
 
 			</main>
 						<Footer/>
