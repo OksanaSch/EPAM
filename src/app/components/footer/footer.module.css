@@ -11,6 +11,11 @@
 	justify-content: space-between;
 }
 
+.icons {
+	height: 20px;
+	width: 20px;
+}
+
 .footerContainer h5 {
 	margin-left: 40px;
 	margin-top: 10px;
