@@ -20,7 +20,7 @@ export default async function ScientificArticles() {
 	return (
 		<>
 			<Header />
-			<Hero image={heroImage} header={data[1].header} listHeader={data[1].listDescription} listItems={data[1].listItems} />
+			<Hero image={heroImage} header={data[1].header} textAbstracts={data[1].textAbstracts}  />
 			<SearchPublication />
 			<PublicationArticle/>
 			<DownloadButton/>

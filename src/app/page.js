@@ -29,7 +29,7 @@ export default async function Home() {
 					<Header/>
 			<main>
 
-				<Hero image={heroImage } header={data[0].header} listHeader={data[0].listHeader} listItems={data[0].listItems} />
+				<Hero image={heroImage } header={data[0].header} textAbstracts={data[0].textAbstracts} />
 				<section className={facultyLife}>
 					<h3>Життя кафедри</h3>
 					<ul className={cards}>

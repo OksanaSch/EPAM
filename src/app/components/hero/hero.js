@@ -7,7 +7,7 @@ import {
 	imageTechnologies
 } from "./hero.module.css";
 
-export default async function Hero ({image, header, listHeader, listItems}) {
+export default async function Hero ({image, header, textAbstracts}) {
 	return (
 		<div className={heroContainer}>
 			<Image className={imageTechnologies}
@@ -16,11 +16,9 @@ export default async function Hero ({image, header, listHeader, listItems}) {
 				height={286}
 				alt="hero picture"/>
 					<div className={heroContent}>
-						<h2 className={heroGreeting}>{header}</h2>
-						<ul>
-					{listHeader}
-					{listItems.map(item => <li key={item} className={heroListItem}>{ item}</li>)}
-						</ul>
+				<h2 className={heroGreeting}>{header}</h2>
+
+					{textAbstracts.map(item => <p key={item} className={heroListItem}>{ item}</p>)}
 					</div>
 
 				</div>
