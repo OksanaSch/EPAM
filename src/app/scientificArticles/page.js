@@ -6,9 +6,17 @@ import heroImage from "../../../public/img/Nauka.png";
 import { promises as fs } from 'fs';
 import SearchPublication from "../components/searchPublication/searchPublication";
 import PublicationArticle from "../components/publicationArticle/publicationArticle";
-import DownloadButton from "../components/downloadButton/downloadButton"
+import DownloadButton from "../components/downloadButton/downloadButton";
+
 async function getData() {
  const path = process.cwd() + "/src/app/hero.json"
+  const file = await fs.readFile(path, "utf8");
+  const data = JSON.parse(file);
+  return data;
+}
+
+async function getArticles() {
+ const path = process.cwd() + "/src/app/articles.json"
   const file = await fs.readFile(path, "utf8");
   const data = JSON.parse(file);
   return data;
@@ -17,12 +25,13 @@ async function getData() {
 export default async function ScientificArticles() {
 
 	const data = await getData();
+	const articles = await getArticles();
 	return (
 		<>
 			<Header />
 			<Hero image={heroImage} header={data[1].header} textAbstracts={data[1].textAbstracts}  />
 			<SearchPublication />
-			<PublicationArticle/>
+			<PublicationArticle articles={ articles} />
 			<DownloadButton/>
 			<Footer />
 		</>
