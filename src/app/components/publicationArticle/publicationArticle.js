@@ -8,7 +8,8 @@ import {
 export default function PublicationArticle({articles}) {
 	return (
 		(articles.map(article =>
-			 <div className={publicationArticle} key={article.id}>
+			 <ul className={publicationArticle} key={article.id}>
+					<li>
 					<h4>{article.title}
 					</h4>
 					<p className={authorArticle}>
@@ -21,7 +22,8 @@ export default function PublicationArticle({articles}) {
 					<button>
 					Читати далі
 					</button>
-				</div>
+					</li>
+				</ul>
 
 				
 		))
