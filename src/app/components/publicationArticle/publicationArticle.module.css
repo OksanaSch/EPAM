@@ -7,10 +7,15 @@
     font-weight: 600;
     line-height: 19.07px;
     text-align: left;
-    margin: 60px;
+    margin:30px;
+    
+  }
+  .publicationArticle li{
+   list-style: none;
+    
   }
 
-  .publicationArticle h4 {
+  .publicati onArticle h4 {
     padding-top: 23px;
     padding-left: 17px;
     padding-right: 7px;

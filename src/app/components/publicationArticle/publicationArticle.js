@@ -7,6 +7,7 @@ import {
 
 export default function PublicationArticle({articles}) {
 	return (
+		
 		(articles.map(article =>
 			 <ul className={publicationArticle} key={article.id}>
 					<li>

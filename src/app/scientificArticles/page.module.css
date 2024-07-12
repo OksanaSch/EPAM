@@ -1,0 +1,26 @@
+.bodyContainer {
+    max-width: 1366px;
+    display: block;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+.publicationArticles{
+    display: grid;
+    gap: 80px;  
+    grid-template-columns: repeat(3, 1fr);                      /* Відстань між елементами */
+    list-style-type: none;  
+    padding-bottom: 108px;
+    width: 100%;
+}
+.bodyContainer h1{
+    font-family: Raleway,sans-serif;
+    font-size: 56.22px;
+    font-weight: 800;
+    line-height: 66.01px;
+    text-align: center;
+    color: #044FB1;
+    padding-top: 56px;
+    padding-bottom: 49px;
+}
