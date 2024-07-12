@@ -1,4 +1,3 @@
-import Link from 'next/link'
 
 import Image from "next/image";
 import "./globals.css";
@@ -6,8 +5,6 @@ import heroImage from "../../public/img/hero.png";
 
 import Header from "./components/header/header";
 import Footer from "./components/footer/footer";
-import PublicationArticle from "./components/publscationArticle/publscationArticle";
-import SearchPublication from "./components/searchPublication/searchPublication"
 import {
 	bodyContainer,
 	facultyLife,
@@ -32,7 +29,7 @@ export default async function Home() {
 					<Header/>
 			<main>
 
-				<Hero image={heroImage } header={data[0].header} listHeader={data[0].listHeader} listItems={data[0].listItems} />
+				<Hero image={heroImage } header={data[0].header} textAbstracts={data[0].textAbstracts} />
 				<section className={facultyLife}>
 					<h3>Життя кафедри</h3>
 					<ul className={cards}>
@@ -79,10 +76,6 @@ export default async function Home() {
 						</li>
 					</ul>
 				</section>
-
-
-					{/* <SearchPublication/>
-					<PublicationArticle/>	 */}
 
 			</main>
 						<Footer/>

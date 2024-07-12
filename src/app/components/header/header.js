@@ -15,9 +15,9 @@ export default function Header() {
 	return (
 		<header>
 				<div className={headerContainer}>
-					<a href="/">
+					<Link href="/">
 						<Image className={ logo} src={laptop}  alt="go to homepage"/>
-					</a>
+					</Link>
 					<h2 className={mainHeader}>
             Кафедра <br /> інформаційних технологій
           </h2>

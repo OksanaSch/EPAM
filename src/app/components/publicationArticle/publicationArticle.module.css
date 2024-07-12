@@ -1,4 +1,4 @@
-.publscationArticle{
+.publicationArticle{
     background: #E0E8F2B0;
     width: 375px;
     height: 274px;
@@ -9,13 +9,13 @@
     text-align: left;
     margin: 60px;
   }
-  
-  .publscationArticle h4 {
+
+  .publicationArticle h4 {
     padding-top: 23px;
     padding-left: 17px;
     padding-right: 7px;
     padding-bottom: 23px;
-  
+
   }
   .authorArticle {
     padding-left: 18px;
@@ -29,8 +29,8 @@
     padding-left: 18px;
     padding-right: 8px;
   }
-  
-  .publscationArticle button {
+
+  .publicationArticle button {
     width: 304px;
     height: 56px;
     font-weight: 400px;
