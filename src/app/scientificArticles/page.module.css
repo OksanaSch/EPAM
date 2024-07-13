@@ -1,3 +1,4 @@
+
 .bodyContainer {
     max-width: 1366px;
     display: block;
@@ -43,5 +44,26 @@
 
 
 
+}
+
+
+.linkBack{
+    padding: 14px 18px 15px 21px;
+    margin: 100px 80px;
+    background-color:#FFB109;
+    width: 304px;
+    height: 56px;
+    border: 1px solid #000000;
+    display: flex;
+    gap: 11px;
+    align-items: center;
+    
+}
+.linkBack span{
+    font-family: Open Sans, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 27.24px;
+    text-align: left;
 }
 
