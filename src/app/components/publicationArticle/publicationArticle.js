@@ -1,32 +1,28 @@
-import ReadMoreButton from "../readMoreButton/readMoreButton";
+import Link from "next/link";
 import {
-		publicationArticle,
-    authorArticle,
-    textArticle,
+	articleTitle,
+  authorArticle,
+	textArticle,
+	articleItem,
+	readMoreButton
 } from "./publicationArticle.module.css";
 
 export default function PublicationArticle({articles}) {
 	return (
-		
 		(articles.map(article =>
-			 <ul className={publicationArticle} key={article.id}>
-					<li>
-					<h4>{article.title}
-					</h4>
+			<li className={articleItem}
+				key={article.id}>
+					<h4 className={articleTitle}>{article.title}</h4>
 					<p className={authorArticle}>
-					Автор: <span>{articles.author}</span>
+					Автор: <span>{article.author}</span>
 					</p>
 					<p className={textArticle}>
 					{article.text}
 			</p>
-			{/* <ReadMoreButton post={article}/> */}
-					<button>
-					Читати далі
+					<button className={readMoreButton}>
+					<Link href={`/scientificArticles/${article.id}`}>Читати далі</Link>
 					</button>
 					</li>
-				</ul>
-
-				
 		))
 
     );

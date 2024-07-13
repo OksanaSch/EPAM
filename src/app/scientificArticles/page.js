@@ -8,9 +8,9 @@ import SearchPublication from "../components/searchPublication/searchPublication
 import PublicationArticle from "../components/publicationArticle/publicationArticle";
 import DownloadButton from "../components/downloadButton/downloadButton";
 
-import{publicationArticles,
-	bodyContainer,
-
+import {
+	publicationArticles,
+	articlesList
 } from "./page.module.css"
 
 
@@ -33,18 +33,21 @@ export default async function ScientificArticles() {
 	const data = await getData();
 	const articles = await getArticles();
 	return (
-		<div className={bodyContainer}>
-		
+		<div>
 			<Header />
 			<Hero image={heroImage} header={data[1].header} textAbstracts={data[1].textAbstracts}  />
 			<SearchPublication />
 			<h1>Усі публікації факультету </h1>
 			<section className={publicationArticles}>
-			<PublicationArticle articles={ articles} />
+				{/* <ul className={publicationArticle}></ul> */}
+				<ul className={articlesList}>
+					<PublicationArticle articles={ articles} />
+			</ul>
+
 			</section>
 			<DownloadButton/>
 			<Footer />
-		
+
 		</div>
 	)
 }
