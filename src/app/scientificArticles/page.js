@@ -9,6 +9,9 @@ import PublicationArticle from "../components/publicationArticle/publicationArti
 import DownloadButton from "../components/downloadButton/downloadButton";
 
 import {
+	searchPublication,
+	searchHeader,
+	centeredForm,
 	publicationArticles,
 	articlesList
 } from "./page.module.css"
@@ -39,8 +42,16 @@ export default async function ScientificArticles() {
 	return (
 		<div>
 			<Header />
-			<Hero image={heroImage} header={data[1].header} textAbstracts={data[1].textAbstracts}  />
-			<SearchPublication />
+			<Hero image={heroImage} header={data[1].header} textAbstracts={data[1].textAbstracts} />
+			<section className={searchPublication}>
+				<h2 className={searchHeader}>Пошук публікацій </h2>
+				<div className={centeredForm}>
+						<SearchPublication />
+				</div>
+
+
+   				 </section>
+
 
 			<h1>Усі публікації факультету </h1>
 			<section className={publicationArticles}>
