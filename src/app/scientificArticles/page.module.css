@@ -1,3 +1,52 @@
+
+.bodyContainer {
+    max-width: 1366px;
+    display: block;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+/* .publicationArticles{
+    display: grid;
+    gap: 80px;
+    grid-template-columns: repeat(3, 1fr);                      /* Відстань між елементами */
+    /* list-style-type: none;
+    padding-bottom: 108px;
+    width: 100%; */
+ /* }  */
+.bodyContainer h1{
+    font-family: Raleway,sans-serif;
+    font-size: 56.22px;
+    font-weight: 800;
+    line-height: 66.01px;
+    text-align: center;
+    color: #044FB1;
+    padding-top: 56px;
+    padding-bottom: 49px;
+}
+
+.articlesList{
+    /* background: #E0E8F2B0;
+    width: 375px;
+    height: 274px;
+    font-family: Open Sans;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 19.07px;
+    text-align: left;
+    margin: 30px; */
+
+        display: flex;
+        flex-wrap: wrap;
+        margin: -15px;
+
+
+
+
+}
+
+
 .linkBack{
     padding: 14px 18px 15px 21px;
     margin: 100px 80px;
@@ -9,10 +58,12 @@
     gap: 11px;
     align-items: center;
     
-}.linkBack span{
+}
+.linkBack span{
     font-family: Open Sans, sans-serif;
     font-size: 20px;
     font-weight: 700;
     line-height: 27.24px;
     text-align: left;
 }
+

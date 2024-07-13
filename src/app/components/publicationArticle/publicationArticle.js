@@ -1,24 +1,29 @@
+import Link from "next/link";
 import {
-		publicationArticle,
-    authorArticle,
-    textArticle,
+	articleTitle,
+  authorArticle,
+	textArticle,
+	articleItem,
+	readMoreButton
 } from "./publicationArticle.module.css";
 
-export default function PublicationArticle() {
+export default function PublicationArticle({articles}) {
 	return (
-        <div className={publicationArticle}>
-					<h4>Аналіз залежності енергоспоживання <br></br>
-					металургійного підприємства  від метеофакторів</h4>
+		(articles.map(article =>
+			<li className={articleItem}
+				key={article.id}>
+					<h4 className={articleTitle}>{article.title}</h4>
 					<p className={authorArticle}>
-					Автор: <span>Анна Бакурова</span>
+					Автор: <span>{article.author}</span>
 					</p>
 					<p className={textArticle}>
-					Актуальною проблемою сучасного металургійного
-підприємства є підвищення його енергоефективності, яка повязана в першу чергу з його ...
-					</p>
-					<button>
-					Читати далі
+					{article.text}
+			</p>
+					<button className={readMoreButton}>
+					<Link href={`/scientificArticles/${article.id}`}>Читати далі</Link>
 					</button>
-				</div>
+					</li>
+		))
+
     );
 }

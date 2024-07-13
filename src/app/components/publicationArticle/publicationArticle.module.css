@@ -1,36 +1,53 @@
-.publicationArticle{
-    background: #E0E8F2B0;
-    width: 375px;
-    height: 274px;
-    font-family: Open Sans;
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 19.07px;
-    text-align: left;
-    margin: 60px;
+.articleItem {
+  /* width: 100%; */
+
+  margin-left: auto;
+  margin-right: auto;
+  list-style: none;
+
+
+  /* @media screen and (min-width: 1900px) { */
+    height: 385px;
+    width: 570px;
+
+    /* &:not(:last-child) {
+      margin-right: 30px; */
+    /* } */
+  /* } */
+}
+
+
+.articleTitle {
+  padding-top: 23px;
+  padding-left: 17px;
+  padding-right: 7px;
+  padding-bottom: 23px;
+
+}
+
+.authorArticle {
+  padding-left: 18px;
+  margin-bottom: 22px;
   }
 
-  .publicationArticle h4 {
-    padding-top: 23px;
-    padding-left: 17px;
-    padding-right: 7px;
-    padding-bottom: 23px;
-
-  }
-  .authorArticle {
-    padding-left: 18px;
-    margin-bottom: 22px;
-  }
-  .authorArticle span {
+.authorArticle span {
      font-weight: 400;
   }
-  .textArticle{
+
+.textArticle{
     font-weight: 400;
     padding-left: 18px;
     padding-right: 8px;
+
+    height: 81px;
+    width: 487px;
+    white-space: nowrap;
+
+    text-overflow: ellipsis;
+    overflow: hidden;
   }
 
-  .publicationArticle button {
+  .readMoreButton {
     width: 304px;
     height: 56px;
     font-weight: 400px;
