@@ -7,9 +7,9 @@ import {
 	readMoreButton
 } from "./publicationArticle.module.css";
 
-export default function PublicationArticle({articles}) {
+export default async function PublicationArticle({articles}) {
 	return (
-		(articles.map(article =>
+		(articles?.map(article =>
 			<li className={articleItem}
 				key={article.id}>
 					<h4 className={articleTitle}>{article.title}</h4>
