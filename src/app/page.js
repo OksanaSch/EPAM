@@ -25,8 +25,7 @@ export default async function Home() {
 
 	const data = await getData();
 	return (
-		<div className={bodyContainer}>
-					<Header/>
+
 			<main>
 
 				<Hero image={heroImage } header={data[0].header} textAbstracts={data[0].textAbstracts} />
@@ -78,7 +77,6 @@ export default async function Home() {
 				</section>
 
 			</main>
-						<Footer/>
-		</div>
+
 	);
 }

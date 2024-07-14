@@ -1,4 +1,6 @@
-
+.searchResults {
+  justify-content: center ;
+}
 
   .searchPublicationForm {
     /* margin: 20px auto 0; */
