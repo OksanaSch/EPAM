@@ -4,7 +4,6 @@ import { useState } from 'react';
 import Link from 'next/link';
 
 import {
-	searchResults,
 	searchPublicationForm,
 	searchPublicationInput,
 	searchPublicationButton
@@ -32,9 +31,7 @@ export default function SearchPublication({onSubmit}) {
 
 	return (
 
-			<section className={searchResults}>
-				<h1>Результати пошуку</h1>
-				<p>За пошуковим запитом <span>“тензор”</span> було знайдено 0 результат(ів)</p>
+
 				<form onSubmit={handleSubmit} className={searchPublicationForm}>
 					<input className={searchPublicationInput}
 						type="text"
@@ -49,6 +46,6 @@ export default function SearchPublication({onSubmit}) {
 						<Link href={`/scientificArticles/searchRequest=${searchRequest}`}>Шукати</Link>
 					</button>
 					</form>
-					</section>
+
 
     )}

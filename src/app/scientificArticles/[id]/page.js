@@ -34,6 +34,10 @@ export default function Page({onSubmit}) {
 
   };
 	return (
-<SearchPublication/>
+		<section className={searchResults}>
+				<h1>Результати пошуку</h1>
+				<p>За пошуковим запитом <span>“тензор”</span> було знайдено 0 результат(ів)</p>
+					<SearchPublication />
+				</section>
 	)
 };
