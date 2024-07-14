@@ -43,7 +43,7 @@ export default function SearchPublication({onSubmit}) {
 						aria-label="Search"
 							></input>
 					<button type="submit" className={searchPublicationButton}>
-						<Link href={`/scientificArticles/searchRequest=${searchRequest}`}>Шукати</Link>
+						<Link href={`/scientificArticles/search/query=${searchRequest}`}>Шукати</Link>
 					</button>
 					</form>
 

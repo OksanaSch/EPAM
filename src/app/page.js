@@ -3,10 +3,7 @@ import Image from "next/image";
 import "./globals.css";
 import heroImage from "../../public/img/hero.png";
 
-import Header from "./components/header/header";
-import Footer from "./components/footer/footer";
 import {
-	bodyContainer,
 	facultyLife,
 	cards,
 	card,
