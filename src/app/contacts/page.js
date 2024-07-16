@@ -1,6 +1,3 @@
-import Footer from "@/app/components/footer/footer";
-import Header from "@/app/components/header/header";
-
 import {
 	contactsContainer,
 	contacts,
@@ -17,10 +14,8 @@ import {
 	massageBox,
 } from "./page.module.css"
 
-export default function ScientificArticles () {
+export default function Contacts () {
 	return (
-		<>
-		  <Header />
 		  <main className={contactsContainer}>
 		  <section className={contacts}>
 				<div>
@@ -34,24 +29,21 @@ export default function ScientificArticles () {
 				</div>
 				<div className={mailContainer}>
 					<h2>Написати нам</h2>
-					<form id="contactForm"> 
-						
+					<form id="contactForm">
 						<div className={formContainer}>
 							<div className={formLables}>
 								<div className={nameLable}><label>Ім'я</label></div>
 								<div className={mailLable}><label>Електронна адреса</label></div>
 								<div><label>Повідомлення</label></div>
-								
-							</div>
+								</div>
+
 						    <div>
-								<input className={nameBox} type="text"></input>
-								<input className={mailBox} type="text"></input>
-								<input className={massageBox} type="text"></input>
-							
-							</div>
-							
+									<input className={nameBox} type="text"></input>
+									<input className={mailBox} type="text"></input>
+									<input className={massageBox} type="text"></input>
+								</div>
+
 						</div>
-					
 					</form>
 					<button type="submit">Надіслати</button>
 				</div>
@@ -60,7 +52,6 @@ export default function ScientificArticles () {
 				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.4486373518894!2d30.524924076557287!3d50.45136987159231!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce51c3bdb9a1%3A0xff877737cf946b28!2z0LLRg9C70LjRhtGPINCl0YDQtdGJ0LDRgtC40LosIDEsINCa0LjRl9CyLCAwMjAwMA!5e0!3m2!1suk!2sua!4v1721109039187!5m2!1suk!2sua" width="984" height="937"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 			</section>
 		  </main>
-			<Footer />
-		</>
+
 	)
 }

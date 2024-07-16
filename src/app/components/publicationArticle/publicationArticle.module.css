@@ -1,13 +1,12 @@
 .articleItem {
-  /* width: 100%; */
-
-
+  width: 100%;
+  padding: 30px;
   list-style: none;
-
+  background-color: #E0E8F2;
+  line-height: 26px;
 
   /* @media screen and (min-width: 1900px) { */
     height: 385px;
-    width: 570px;
 
     &:not(:last-child) {
       margin-right: 30px;
@@ -16,17 +15,16 @@
 
 
 .articleTitle {
-  padding-top: 23px;
-  padding-left: 17px;
-  padding-right: 7px;
-  padding-bottom: 23px;
-
+  margin-bottom: 30px;
+  @media screen and (min-width: 1400px) {
+   min-height: 78px;
+  }
 }
 
 .authorArticle {
-  padding-left: 18px;
-  margin-bottom: 22px;
-  }
+  font-weight: 600;
+  margin-bottom: 30px;
+}
 
 .authorArticle span {
      font-weight: 400;
@@ -34,12 +32,11 @@
 
 .textArticle{
     font-weight: 400;
-    padding-left: 18px;
-    padding-right: 8px;
-
-    height: 81px;
-    width: 487px;
-    white-space: nowrap;
+    margin-bottom: 20px;
+    width: 100%;
+    display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
 
     text-overflow: ellipsis;
     overflow: hidden;
@@ -50,7 +47,7 @@
     height: 56px;
     font-weight: 400px;
     border: 3px solid #FFB109;
-    margin-top: 16px;
-    margin-left: 35px;
-    margin-right: 36px;
+
+    display: block;
+    margin: 0 auto;
   }

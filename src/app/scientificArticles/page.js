@@ -10,6 +10,7 @@ import {
 	searchPublication,
 	searchHeader,
 	centeredForm,
+	allArticlessHeader,
 	publicationArticles,
 	articlesList
 } from "./page.module.css"
@@ -45,7 +46,7 @@ export default async function ScientificArticles() {
    				 </section>
 
 
-			<h1>Усі публікації факультету </h1>
+			<h1 className={allArticlessHeader}>Усі публікації факультету </h1>
 			<section className={publicationArticles}>
 
 				<ul className={articlesList}>
