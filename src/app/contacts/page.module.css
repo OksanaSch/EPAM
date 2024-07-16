@@ -1,0 +1,73 @@
+.contactsContainer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: Open Sans, sans-serif;
+    font-size: 19.68px;
+    font-weight: 400;
+    line-height: 26.8px;
+    text-align: center;
+}
+.contactsContainer h1, .contactsContainer h2 {
+    font-family: Raleway,sans-serif;
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 56.35px;
+    color: #044FB1;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+.adressTitle {
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+.mailTitle, .phoneTitle {
+    font-weight: 600;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.mailContainer {
+    background-color: #453A8F45;
+    width: 932px;
+    height: 542px;
+    margin-top: 30px;
+}
+.contactsContainer input {
+    width: 602px;
+    height: 52px;
+    border: 1.41px 0px 0px 0px;
+}
+input.massageBox  {
+    height: 194px;
+    border: 1.41px 0px 0px 0px;
+}
+
+.formContainer{
+    display: flex;
+}
+.formLables {
+  text-align: start;
+  font-family: Open Sans,sans-serif;
+    font-size: 19.68px;
+    font-weight: 700;
+    line-height: 26.8px;
+    text-align: left;
+    padding-left: 76px;
+}
+.nameLable{
+    padding-bottom: 45px;
+}
+.nameBox, .mailBox, .massageBox{
+    margin-bottom: 20px;
+}
+.mailContainer button{
+    width: 210.83px;
+    height: 78.71px;
+    background-color: #FFB109;
+    font-family: Open Sans,sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32.68px;
+    text-align: center;
+    border: 1px solid #000000
+}
