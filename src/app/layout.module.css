@@ -1,0 +1,8 @@
+.bodyContainer {
+	max-width: 1366px;
+	display: block;
+	margin: 0 auto;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}

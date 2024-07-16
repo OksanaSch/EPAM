@@ -1,41 +1,53 @@
-.publicationArticle{
-    background: #E0E8F2B0;
-    width: 375px;
-    height: 274px;
-    font-family: Open Sans;
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 19.07px;
-    text-align: left;
-    margin: 60px;
-  }
+.articleItem {
+  width: 100%;
+  padding: 30px;
+  list-style: none;
+  background-color: #E0E8F2;
+  line-height: 26px;
 
-  .publicationArticle h4 {
-    padding-top: 23px;
-    padding-left: 17px;
-    padding-right: 7px;
-    padding-bottom: 23px;
+  /* @media screen and (min-width: 1900px) { */
+    height: 385px;
 
+    &:not(:last-child) {
+      margin-right: 30px;
+     }
+}
+
+
+.articleTitle {
+  margin-bottom: 30px;
+  @media screen and (min-width: 1400px) {
+   min-height: 78px;
   }
-  .authorArticle {
-    padding-left: 18px;
-    margin-bottom: 22px;
-  }
-  .authorArticle span {
+}
+
+.authorArticle {
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.authorArticle span {
      font-weight: 400;
   }
-  .textArticle{
+
+.textArticle{
     font-weight: 400;
-    padding-left: 18px;
-    padding-right: 8px;
+    margin-bottom: 20px;
+    width: 100%;
+    display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+
+    text-overflow: ellipsis;
+    overflow: hidden;
   }
 
-  .publicationArticle button {
+  .readMoreButton {
     width: 304px;
     height: 56px;
     font-weight: 400px;
     border: 3px solid #FFB109;
-    margin-top: 16px;
-    margin-left: 35px;
-    margin-right: 36px;
+
+    display: block;
+    margin: 0 auto;
   }
