@@ -30,21 +30,28 @@
 }
 
 .articlesList{
-    /* background: #E0E8F2B0;
-    width: 375px;
-    height: 274px;
-    font-family: Open Sans;
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 19.07px;
-    text-align: left;
-    margin: 30px; */
+/* display: grid;
+    max-width: calc(100vw - 170px);
+    grid-template-columns: repeat(3, minmax(320px, 1fr));
+    grid-gap: 84px;
+    padding: 0;
+    list-style: none;
+    margin: 1% auto 80px; */
 
-        display: flex;
-        flex-wrap: wrap;
-        margin: -15px;
+        /* background: #E0E8F2B0;
+        width: 375px;
+        height: 274px;
+        font-family: Open Sans;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 19.07px;
+        text-align: left;
+        margin: 60px;
+        margin: 30px; */
 
-
-
-
+display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 85px;
+    list-style: none;
+    padding-left: 0;
 }

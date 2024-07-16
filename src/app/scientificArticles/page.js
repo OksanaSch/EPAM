@@ -1,5 +1,3 @@
-import Footer from "@/app/components/footer/footer";
-import Header from "@/app/components/header/header";
 import Hero from "../components/hero/hero";
 import heroImage from "../../../public/img/Nauka.png";
 
@@ -30,10 +28,6 @@ async function getArticles() {
   const data = JSON.parse(file);
   return data;
 }
-
-import {
-	linkBack,
-} from "./page.module.css";
 
 export default async function ScientificArticles() {
 
