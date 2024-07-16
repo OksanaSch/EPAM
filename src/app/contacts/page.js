@@ -11,6 +11,7 @@ import {
 	formContainer,
 	formLables,
 	nameLable,
+	mailLable,
 	nameBox,
 	mailBox,
 	massageBox,
@@ -38,7 +39,7 @@ export default function ScientificArticles () {
 						<div className={formContainer}>
 							<div className={formLables}>
 								<div className={nameLable}><label>Ім'я</label></div>
-								<div><label>Електронна адреса</label></div>
+								<div className={mailLable}><label>Електронна адреса</label></div>
 								<div><label>Повідомлення</label></div>
 								
 							</div>

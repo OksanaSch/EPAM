@@ -57,6 +57,9 @@ input.massageBox  {
 .nameLable{
     padding-bottom: 45px;
 }
+.mailLable{
+    padding-bottom: 18px;
+}
 .nameBox, .mailBox, .massageBox{
     margin-bottom: 20px;
 }
