@@ -34,7 +34,7 @@
 	list-style: none;
 }
 
-.pageNavigation .menuItem+.menuItem {
+.pageNavigation a + a {
 	margin-left: 40px;
 }
 
@@ -48,8 +48,3 @@
 	color: white;
 }
 
-.activeLink {
-	color: white;
-	text-decoration: underline;
-	font-weight: 600;
-}

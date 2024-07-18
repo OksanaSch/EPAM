@@ -77,3 +77,10 @@ p {
     color-scheme: dark;
   }
 }
+
+
+.activeLink {
+  color: #FFB109;
+  text-decoration: underline;
+  font-weight: 800;
+}
