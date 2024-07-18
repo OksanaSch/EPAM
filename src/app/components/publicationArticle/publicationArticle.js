@@ -19,7 +19,7 @@ export default function PublicationArticle({ articles }) {
 		setArticlesData(articles)
 	}, []);
 
-	const { paginatedData, nextPage } = useDataPaginate(articlesData, 6);
+	const { paginatedData, nextPage, lastPage } = useDataPaginate(articlesData, 6);
 	return (
 		<>
 				<ul className={articlesList}>
@@ -39,7 +39,7 @@ export default function PublicationArticle({ articles }) {
 				</li>
 				)}
 				</ul>
-			< DownloadButton nextPage = {nextPage} />
+			< DownloadButton nextPage={nextPage} lastPage={ lastPage} />
 			</>
 
 

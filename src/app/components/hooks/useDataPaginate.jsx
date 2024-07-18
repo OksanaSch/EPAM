@@ -8,7 +8,8 @@ import { useCallback, useEffect, useState } from "react";
 // We also don't know the limit yet, we simply pass `limit` as argument
 
 export const useDataPaginate = (data, limit) => {
-	const [currentPage, setPage] = useState(1);
+    const [currentPage, setPage] = useState(1);
+    const [lastPage, setLastPage] = useState(false);
 
     const getPaginatedData = () => {
 
@@ -48,13 +49,17 @@ export const useDataPaginate = (data, limit) => {
         if (currentPage < Math.ceil(data.length / limit)) {
             setPage(previousPage => previousPage + 1)
         }
-        console.log("clicked");
+
+
+        if (Math.ceil(data.length / (currentPage * limit)) < 3) {
+            setLastPage(true)
+        }
     }
 
 
     // Finally return all your functions
 
-    return { nextPage, paginatedData, currentPage }
+    return { nextPage, paginatedData, currentPage, lastPage }
 
 }
 
