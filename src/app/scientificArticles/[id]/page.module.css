@@ -62,7 +62,7 @@ padding-bottom: 29px;
     display: flex;
     gap: 11px;
     align-items: center;
-    
+
 }
 .linkBack span{
     font-family: Open Sans, sans-serif;
@@ -73,69 +73,3 @@ padding-bottom: 29px;
 }
 
 /* completeArticle */
-.completeArticle {
-    font-family: Open Sans;
-    font-size: 19.68px;
-    font-weight: 400;
-    line-height: 26.8px;
-    text-align: justify;
-    max-width: 1110px;
-    margin: 0 auto;
- }
-.completeArticle h1 {
-    font-family: Raleway;
-    font-size: 46px;
-    font-weight: 800;
-    line-height: 54px;
-    text-align: center;
-    color: #044FB1;
-    max-width: 957px;
-    margin: 0 auto;
-    padding-bottom: 22px;
-}
-.aboutArticle{
-    display: flex;
-    justify-content: center;
-    
-}
-.completeArticle p{
-    font-weight: 600;
-    line-height: 26.8px;
-    text-align: center;
-   
-}
-.autorArticle{
-    text-align: end;
-    margin-right: 80px;
-}
-
-.completeArticle span {
-    font-weight: 400;
-}
-.completeArticle ul{
-    padding-top: 20px;
-    list-style-type: none;
-}
-
-.downloadButtonContainer {
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    margin: 40px 0;
-   
-  }
-  
-  .downloadButton {
-    display: flex;
-    padding: 23px 34px;
-    width: 427.29px;
-    height: 78.71px;
-    border: 1px 0px 0px 0px;
-    font-family: Open Sans, sans-serif;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 27.24px;
-    text-align: center;
-    background-color: #FFB109;
-  }
-

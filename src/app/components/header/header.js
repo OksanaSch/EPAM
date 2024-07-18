@@ -15,7 +15,7 @@ import Link from "next/link";
 
 export default function Header() {
 	const pathname = usePathname()
-	console.log(pathname);
+
 	return (
 		<header>
 				<div className={headerContainer}>
@@ -36,7 +36,7 @@ export default function Header() {
 							<Link  href="">
 									Адміністрація
 							</Link>
-							<Link href="/scientificArticles" className={`${pathname === '/scientificArticles' ? 'activeLink' : ''}`}>
+							<Link href="/scientificArticles" className={`${pathname.includes('/scientificArticles') ? 'activeLink' : ''}`}>
 									Наукова робота
 							</Link>
 							<Link href="/contacts" className={`${pathname === '/contacts' ? 'activeLink' : ''}`}>

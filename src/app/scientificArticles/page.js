@@ -11,8 +11,7 @@ import {
 	searchHeader,
 	centeredForm,
 	allArticlessHeader,
-	publicationArticles,
-	articlesList
+	publicationArticles
 } from "./page.module.css";
 
 
