@@ -21,7 +21,6 @@ export default function CompleteArticle({ articles }) {
 	const pathname = usePathname();
 	const pathId = pathname.slice(20);
 	const article = articlesData[pathId - 1];
-	console.log(article?.title);
 
 	return (
 		<section className={completeArticle}>
