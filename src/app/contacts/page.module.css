@@ -8,7 +8,6 @@
     line-height: 26.8px;
     text-align: center;
     max-width: 100%;
-
 }
 .contactsContainer h1, .contactsContainer h2 {
     font-family: Raleway,sans-serif;
@@ -18,9 +17,6 @@
     color: #044FB1;
     padding-top: 20px;
     padding-bottom: 30px;
-}
-.contacts{
-    max-width: 50%;
 }
 .adressTitle {
     font-weight: 700;
@@ -37,14 +33,15 @@
     height: 555px;
     margin-top: 30px;
 }
-.contactsContainer input {
-    width: 602px;
+
+.mailBox, .nameBox, .massageBox{
+    max-width: 602px;
     height: 52px;
-    border: 1.41px 0px 0px 0px;
+    border: 1.41px solid #000000;
+    border-radius: 0;
 }
-input.massageBox  {
+textarea.massageBox  {
     height: 194px;
-    border: 1.41px 0px 0px 0px;
 }
 
 .formContainer{
