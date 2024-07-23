@@ -1,3 +1,6 @@
+
+"use client"
+import { useState } from 'react';
 import { Container, Row, Col, } from "react-bootstrap";
 import {
 	contactsContainer,
@@ -15,7 +18,24 @@ import {
 	massageBox,
 } from "./page.module.css"
 import Form from 'react-bootstrap/Form';
+
 export default function Contacts () {
+
+	const [validated, setValidated] = useState(false);
+
+	const handleSubmit = (event) => {
+	  const form = event.currentTarget;
+	  if (form.checkValidity() === false) {
+		event.preventDefault();
+		event.stopPropagation();
+	  }
+  
+	  setValidated(true);
+	};
+
+
+
+
 	return (
 	
 			<Row className={contactsContainer}>
@@ -33,8 +53,54 @@ export default function Contacts () {
 					<section className={mailContainer}>
 						
 						<h2>Написати нам</h2>
+
+						{/* <Form noValidate validated={validated} onSubmit={handleSubmit}>
+     
+        <Form.Group controlId="validationCustom01">
+         
+          <Form.Control
+            required
+            type="text"
+            placeholder="First name"
+           
+          />
+          <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
+		  <Form.Control.Feedback type="invalid">
+            Please provide a valid state.
+			</Form.Control.Feedback>
+		  <Form.Control
+            required
+            type="text"
+            placeholder="Last name"
+           
+          />
+          <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
+		  <Form.Control.Feedback type="invalid">
+            Please provide a valid state.
+			</Form.Control.Feedback>
+		  <Form.Control
+            required
+            type="text"
+            placeholder="Last name"
+           
+          />
+          <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
+		  <Form.Control.Feedback type="invalid">
+            Please provide a valid state.
+			</Form.Control.Feedback>
+        </Form.Group>
+        
+        
+    
+     
+     
+      <Button type="submit">Submit form</Button>
+    </Form> */}
+
+
+
 						
-						<Form>    
+						<Form noValidate validated={validated} onSubmit={handleSubmit}>    
 							<Row>
 							<div className={formContainer}>
 								<Col sm={3} >
@@ -45,17 +111,21 @@ export default function Contacts () {
 									</div>
 								</Col>
 								<Col sm={9}>
-									
-									<Form.Control  className={nameBox} type="text"/>
-									<Form.Control className={mailBox} type="email"/>
-									<Form.Control className={massageBox}  as="textarea" rows={3} ></Form.Control>									
-									
+								<Form.Group controlId="validationCustom01">
+									<Form.Control  className={nameBox}  required type="text"/>
+									<Form.Control className={mailBox}  required type="email"/>
+									<Form.Control className={massageBox}  required as="textarea" rows={3} ></Form.Control>
+									<Form.Control.Feedback type="invalid">
+										Будь-ласка, заповніть усі поля  правильно!
+									</Form.Control.Feedback>									
+									</Form.Group>
 								</Col>
 							</div>
 							</Row>
+							<button type="submit">Надіслати</button>
 					</Form>
 					
-				<button type="submit">Надіслати</button>
+		
 				</section>
 				
 					
