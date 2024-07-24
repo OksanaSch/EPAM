@@ -88,10 +88,12 @@ p {
 
 .navbar-toggler.collapsed .navbar-toggler-icon {
   background-image: url("/svg/hamburger-menu-closed.svg");
+  width: 48px;
 }
 
 .navbar-toggler .navbar-toggler-icon {
   background-image: url("/svg/close.svg");
+  width: 48px;
 }
 
 .navbar-toggler:focus {
