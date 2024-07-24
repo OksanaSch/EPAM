@@ -84,3 +84,16 @@ p {
   text-decoration: underline;
   font-weight: 800;
 }
+
+
+.navbar-toggler.collapsed .navbar-toggler-icon {
+  background-image: url("/svg/hamburger-menu-closed.svg");
+}
+
+.navbar-toggler .navbar-toggler-icon {
+  background-image: url("/svg/close.svg");
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}

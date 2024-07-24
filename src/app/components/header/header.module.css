@@ -30,7 +30,6 @@
 .pageNavigation {
 	margin-left: auto;
 	align-items: center;
-	
 }
 
 .pageNavigationList {
@@ -54,10 +53,8 @@
 }
 
 .menuButton{
-	background: #FFFFFF;
-	
-	
-
+	/* background: #FFFFFF; */
+	border: none;
 }
 
 @media(max-width:770px){
@@ -72,3 +69,10 @@
 		left: 0;
 	}
 }
+
+@media(max-width:1023px) {
+	.pageNavigation a+a {
+			margin: 0;
+		}
+}
+

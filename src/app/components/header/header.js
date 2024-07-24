@@ -24,20 +24,16 @@ export default function Header() {
 
 	return (
 		<header>
-			<Navbar expand="sm"  className={headerContainer} >	
-				
+			<Navbar expand="sm"  className={headerContainer} >
 			<Link href="/">
 				<Image className={ logo} src={laptop}  alt="go to homepage"/>
 			</Link>
-			
 					<h2 className={mainHeader}>
-            Кафедра <br /> інформаційних технологій
+            Кафедра <br /> “Кібернетика та штучний інтелект”
           </h2>
-		
 			<Navbar.Toggle  className={menuButton} aria-controls="basic-navbar-nav" />
-			<Navbar.Collapse id="basic-navbar-nav">
+				<Navbar.Collapse id="basic-navbar-nav" style={{ color: "white" }}>
 					<Nav className={pageNavigation}>
-						
 						<Link href="/" className={`${pathname === '/' ? 'activeLink' : ''}`}>
 								Про кафедру
 						</Link>
@@ -53,10 +49,10 @@ export default function Header() {
 							<Link href="/contacts" className={`${pathname === '/contacts' ? 'activeLink' : ''}`}>
 									Контакти
 							</Link>
-					
+
 					</Nav>
 				</Navbar.Collapse>
-				
+
 				</Navbar>
 			</header>
 
