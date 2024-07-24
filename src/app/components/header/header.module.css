@@ -1,3 +1,6 @@
+.Container{
+	background-color: var(--background-header-footer);
+}
 .headerContainer {
 	padding-left: 15px;
 	padding-right: 15px;
@@ -27,11 +30,13 @@
 .pageNavigation {
 	margin-left: auto;
 	align-items: center;
+	
 }
 
 .pageNavigationList {
-	display: flex;
+	/* display: flex; */
 	list-style: none;
+
 }
 
 .pageNavigation a + a {
@@ -48,3 +53,22 @@
 	color: white;
 }
 
+.menuButton{
+	background: #FFFFFF;
+	
+	
+
+}
+
+@media(max-width:770px){
+	.headerContainer{
+		height: 100%;
+	}
+	.pageNavigation{
+		background-color: var(--background-header-footer);
+		width: 100%;
+		position: absolute;
+		top:100%;
+		left: 0;
+	}
+}

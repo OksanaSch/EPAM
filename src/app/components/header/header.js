@@ -4,12 +4,18 @@ import laptop from "../../../../public/svg/laptop.svg";
 import { usePathname } from 'next/navigation';
 import "../../globals.css";
 
+
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+
+
 import {
 	headerContainer,
 	logo,
 	mainHeader,
 	pageNavigation,
-	pageNavigationList
+	pageNavigationList,
+	menuButton,
 } from "./header.module.css";
 import Link from "next/link";
 
@@ -18,15 +24,20 @@ export default function Header() {
 
 	return (
 		<header>
-				<div className={headerContainer}>
-					<Link href="/">
-						<Image className={ logo} src={laptop}  alt="go to homepage"/>
-					</Link>
+			<Navbar expand="sm"  className={headerContainer} >	
+				
+			<Link href="/">
+				<Image className={ logo} src={laptop}  alt="go to homepage"/>
+			</Link>
+			
 					<h2 className={mainHeader}>
             Кафедра <br /> інформаційних технологій
           </h2>
-					<nav className={pageNavigation}>
-						<ul className={pageNavigationList}>
+		
+			<Navbar.Toggle  className={menuButton} aria-controls="basic-navbar-nav" />
+			<Navbar.Collapse id="basic-navbar-nav">
+					<Nav className={pageNavigation}>
+						
 						<Link href="/" className={`${pathname === '/' ? 'activeLink' : ''}`}>
 								Про кафедру
 						</Link>
@@ -42,9 +53,11 @@ export default function Header() {
 							<Link href="/contacts" className={`${pathname === '/contacts' ? 'activeLink' : ''}`}>
 									Контакти
 							</Link>
-						</ul>
-					</nav>
-				</div>
+					
+					</Nav>
+				</Navbar.Collapse>
+				
+				</Navbar>
 			</header>
 
 	);

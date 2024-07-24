@@ -52,54 +52,7 @@ export default function Contacts () {
 					</section>
 					<section className={mailContainer}>
 						
-						<h2>Написати нам</h2>
-
-						{/* <Form noValidate validated={validated} onSubmit={handleSubmit}>
-     
-        <Form.Group controlId="validationCustom01">
-         
-          <Form.Control
-            required
-            type="text"
-            placeholder="First name"
-           
-          />
-          <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
-		  <Form.Control.Feedback type="invalid">
-            Please provide a valid state.
-			</Form.Control.Feedback>
-		  <Form.Control
-            required
-            type="text"
-            placeholder="Last name"
-           
-          />
-          <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
-		  <Form.Control.Feedback type="invalid">
-            Please provide a valid state.
-			</Form.Control.Feedback>
-		  <Form.Control
-            required
-            type="text"
-            placeholder="Last name"
-           
-          />
-          <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
-		  <Form.Control.Feedback type="invalid">
-            Please provide a valid state.
-			</Form.Control.Feedback>
-        </Form.Group>
-        
-        
-    
-     
-     
-      <Button type="submit">Submit form</Button>
-    </Form> */}
-
-
-
-						
+						<h2>Написати нам</h2>					
 						<Form noValidate validated={validated} onSubmit={handleSubmit}>    
 							<Row>
 							<div className={formContainer}>
