@@ -12,8 +12,6 @@
 
 .searchPublication {
     background-color: #325b8e;
-    /* max-width: 100%; */
-    /* height: 186px; */
 }
 
 .searchHeader {
@@ -37,6 +35,13 @@
 @media only screen and (max-width: 1200px) {
     .centeredForm {
         text-align: center;
+    }
+}
+
+@media(min-width: 1200px){
+    .searchPublication {
+      height: 186px;
+      text-align: center;
     }
 }
 
