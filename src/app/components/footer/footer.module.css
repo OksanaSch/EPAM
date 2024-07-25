@@ -41,6 +41,11 @@
 			display: none;
 	}
 
+	.footerHeaderHidden {
+		font-weight: 900;
+		font-size: 14px;
+	}
+
 	.footerContainer {
 		height: auto;
 	}
@@ -82,7 +87,6 @@
 		display: none;
 	}
 
-	.footerHeader,
 	.footerHeaderHidden {
 		font-weight: 900;
 		font-size: 14px;
