@@ -67,16 +67,14 @@ a {
   padding: 0;
 }
 
-p {
+p, h1, h2, h3, h4, h5, h6 {
   margin: 0;
+  font-size: inherit;
 }
 
-
-/* @media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-} */
+ul {
+  list-style: none;
+}
 
 
 .activeLink {

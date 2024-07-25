@@ -2,14 +2,12 @@
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 85px;
-  list-style: none;
   padding-left: 0;
 }
 
 .articleItem {
   width: 100%;
   padding: 30px;
-  list-style: none;
   background-color: #E0E8F2;
   line-height: 26px;
 
