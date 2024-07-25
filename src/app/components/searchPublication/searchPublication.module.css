@@ -1,11 +1,7 @@
-
   .searchPublicationForm {
-    /* margin: 20px auto 0; */
-    padding-left: 364px;
-    margin-top: 20px;
+    margin: 20px auto 0;
   }
   .searchPublicationInput{
-    width: 428px;
     height: 56px;
     border: 1px 0px 0px 0px;
     opacity: 0px;
@@ -24,4 +20,25 @@
     font-size: 20px;
     font-weight: 400;
     line-height: 27.24px;
+  }
+
+  @media only screen and (max-width: 1200px) {
+    .searchPublicationForm {
+      padding: 0;
+    }
+
+    .searchPublicationInput {
+      width: 95%;
+    }
+
+    .searchPublicationButton {
+      margin: 20px auto;
+      display: block;
+    }
+  }
+
+  @media(min-width: 650px){
+    .searchPublicationInput {
+        width: 428px;
+    }
   }
