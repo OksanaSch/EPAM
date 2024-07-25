@@ -17,11 +17,6 @@
 	align-items: center;
 }
 
-.pageNavigationList {
-	/* display: flex; */
-	list-style: none;
-
-}
 
 .pageNavigation a + a {
 	margin-left: 20px;
