@@ -41,7 +41,7 @@
 	width: 50%;
 	height: auto;
 }
-@media(max-width:990px){
+@media(max-width:1400px){
 	.heroContainer {
 		display:block;
 		max-width: 100%;
