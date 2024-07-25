@@ -24,7 +24,7 @@ export default function Header() {
 
 	return (
 		<header>
-			<Navbar expand="sm"  className={headerContainer} >
+			<Navbar expand="custom"  className={headerContainer} >
 			<Link href="/">
 				<Image className={ logo} src={laptop}  alt="go to homepage"/>
 			</Link>
