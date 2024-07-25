@@ -72,15 +72,59 @@ p {
 }
 
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
-}
+} */
 
 
 .activeLink {
   color: #FFB109;
   text-decoration: underline;
   font-weight: 800;
+}
+
+
+.navbar-toggler.collapsed .navbar-toggler-icon {
+  background-image: url("/svg/hamburger-menu-closed.svg");
+  width: 48px;
+}
+
+.navbar-toggler .navbar-toggler-icon {
+  background-image: url("/svg/close.svg");
+  width: 48px;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+@media (min-width: 1024px) {
+  .navbar-expand-custom {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
+
+  .navbar-expand-custom .navbar-nav {
+    flex-direction: row;
+  }
+
+  .navbar-expand-custom .navbar-nav .nav-link {
+    padding-right: .5rem;
+    padding-left: .5rem;
+  }
+
+  .navbar-expand-custom .navbar-collapse {
+    display: flex;
+  }
+
+  .navbar-collapse.collapse {
+    flex-basis: 0;
+  }
+
+  .navbar-expand-custom .navbar-toggler {
+    display: none;
+  }
 }
