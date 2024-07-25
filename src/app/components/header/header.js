@@ -1,17 +1,21 @@
+"use client";
 import Image from "next/image";
 import laptop from "../../../../public/svg/laptop.svg";
+import { usePathname } from 'next/navigation';
+import "../../globals.css";
 
 import {
 	headerContainer,
 	logo,
 	mainHeader,
 	pageNavigation,
-	pageNavigationList,
-	menuItem,
+	pageNavigationList
 } from "./header.module.css";
 import Link from "next/link";
 
 export default function Header() {
+	const pathname = usePathname()
+
 	return (
 		<header>
 				<div className={headerContainer}>
@@ -23,19 +27,19 @@ export default function Header() {
           </h2>
 					<nav className={pageNavigation}>
 						<ul className={pageNavigationList}>
-							<Link className={menuItem} href="/">
-									Про кафедру
-							</Link>
-							<Link className={menuItem} href="">
+						<Link href="/" className={`${pathname === '/' ? 'activeLink' : ''}`}>
+								Про кафедру
+						</Link>
+							<Link href="">
 									Новини
 							</Link>
-							<Link className={menuItem} href="">
+							<Link  href="">
 									Адміністрація
 							</Link>
-							<Link className={menuItem} href="/scientificArticles">
+							<Link href="/scientificArticles" className={`${pathname.includes('/scientificArticles') ? 'activeLink' : ''}`}>
 									Наукова робота
 							</Link>
-							<Link className={menuItem} href="/contacts">
+							<Link href="/contacts" className={`${pathname === '/contacts' ? 'activeLink' : ''}`}>
 									Контакти
 							</Link>
 						</ul>

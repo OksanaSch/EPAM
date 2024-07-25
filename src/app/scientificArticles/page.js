@@ -1,19 +1,18 @@
+
 import Hero from "../components/hero/hero";
 import heroImage from "../../../public/img/Nauka.png";
 
 import { promises as fs } from 'fs';
 import SearchPublication from "../components/searchPublication/searchPublication";
 import PublicationArticle from "../components/publicationArticle/publicationArticle";
-import DownloadButton from "../components/downloadButton/downloadButton";
 
 import {
 	searchPublication,
 	searchHeader,
 	centeredForm,
 	allArticlessHeader,
-	publicationArticles,
-	articlesList
-} from "./page.module.css"
+	publicationArticles
+} from "./page.module.css";
 
 
 async function getData() {
@@ -30,10 +29,12 @@ async function getArticles() {
   return data;
 }
 
-export default async function ScientificArticles() {
 
 	const data = await getData();
 	const articles = await getArticles();
+
+export default function ScientificArticles() {
+
 	return (
 		<>
 
@@ -49,16 +50,11 @@ export default async function ScientificArticles() {
 			<h1 className={allArticlessHeader}>Усі публікації факультету </h1>
 			<section className={publicationArticles}>
 
-				<ul className={articlesList}>
+
 					<PublicationArticle articles={ articles} />
-			</ul>
+
 
 			</section>
-
-
-
-			<DownloadButton/>
-
 
 		</>
 	)
