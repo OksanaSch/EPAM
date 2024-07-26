@@ -8,36 +8,51 @@
 	margin-bottom: 42px;
 }
 
-.searchResults h1 {
+.searchResultsHeader {
 	font-family: Raleway, sans-serif;
-	font-size: 67.47px;
+	font-size: 67px;
 	font-weight: 800;
-	line-height: 79.21px;
+	line-height: 80px;
 	text-align: center;
 	color: #044FB1;
-
 }
 
-.searchResults p {
-	padding-top: 28px;
-	padding-bottom: 29px;
-
+.searchResultsNumber {
+	margin: 28px 0 30px;
 }
 
-.searchResults span {
-	font-weight: 700;
+.query {
+	font-weight: 600;
 }
 
-.searchResults input {
-	width: 601.58px;
-	height: 78.71px;
-	margin-right: 86px;
-	font-family: Open Sans;
-	font-size: 19.68px;
-	text-align: left;
-	padding-left: 31px;
-	border: 1.41px solid #000000;
+@media(max-width: 768px){
+	.searchResultsHeader {
+		font-size: 32px;
+		line-height: 38px;
+	}
+
+	.searchResultsNumber {
+		font-size: 12px;
+		font-weight: 500;
+		line-height: 16px;
+		margin: 15px 0 20px;
+	}
 }
+
+@media(min-width: 769px) and (max-width: 1199px) {
+	.searchResultsHeader {
+		font-size: 56px;
+		line-height: 65px;
+	}
+
+	.searchResultsNumber {
+		font-size: 20px;
+		font-weight: 400;
+		line-height: 26px;
+		margin: 25px 0 30px;
+	}
+}
+
 
 .searchResults .searchPublicationButton {
 	width: 210.83px;
@@ -49,5 +64,4 @@
 	text-align: center;
 	border: 1.41px solid #000000;
 	color: #6c6c6c;
-
 }
