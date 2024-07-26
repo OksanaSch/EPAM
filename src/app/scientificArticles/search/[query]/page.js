@@ -3,7 +3,9 @@
 import { useParams } from 'next/navigation';
 import {
 	searchResults,
-	linkBack
+	searchResultsHeader,
+	searchResultsNumber,
+	query
 } from "./page.module.css";
 import SearchPublication from '@/app/components/searchPublication/searchPublication';
 import BackToArticlesButton from "@/app/components/backToArticlesButton/backToArticlesButton";
@@ -15,8 +17,8 @@ export default function Page() {
 	return (
 		<section className={searchResults}>
 			<BackToArticlesButton />
-				<h1>Результати пошуку</h1>
-			<p>За пошуковим запитом <span>{ searchRequest}</span> було знайдено 0 результат(ів)</p>
+				<h1 className={searchResultsHeader}>Результати пошуку</h1>
+			<p className={searchResultsNumber}>За пошуковим запитом <span className={query}>&quot;{ searchRequest}&quot;</span> було знайдено 0 результат(ів)</p>
 					<SearchPublication />
 				</section>
 	)

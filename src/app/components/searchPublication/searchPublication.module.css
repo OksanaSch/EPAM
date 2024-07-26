@@ -22,13 +22,21 @@
     line-height: 27.24px;
   }
 
-  @media only screen and (max-width: 1200px) {
-    .searchPublicationForm {
-      padding: 0;
-    }
-
+  @media(max-width: 650px) {
     .searchPublicationInput {
       width: 95%;
+    }
+  }
+
+  @media(min-width: 650px) {
+    .searchPublicationInput {
+      width: 600px;
+    }
+  }
+
+  @media only screen and (max-width: 1199px) {
+    .searchPublicationForm {
+      padding: 0;
     }
 
     .searchPublicationButton {
@@ -37,8 +45,3 @@
     }
   }
 
-  @media(min-width: 650px){
-    .searchPublicationInput {
-        width: 428px;
-    }
-  }
