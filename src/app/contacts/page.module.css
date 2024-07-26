@@ -8,7 +8,6 @@
     line-height: 26.8px;
     text-align: center;
     max-width: 100%;
-
 }
 .contactsContainer h1, .contactsContainer h2 {
     font-family: Raleway,sans-serif;
@@ -17,10 +16,7 @@
     line-height: 56.35px;
     color: #044FB1;
     padding-top: 20px;
-    padding-bottom: 30px;
-}
-.contacts{
-    max-width: 50%;
+    padding-bottom: 20px;
 }
 .adressTitle {
     font-weight: 700;
@@ -37,14 +33,16 @@
     height: 555px;
     margin-top: 30px;
 }
-.contactsContainer input {
-    width: 602px;
+
+.mailBox, .nameBox, .massageBox{
+    max-width: 602px;
     height: 52px;
-    border: 1.41px 0px 0px 0px;
+    border: 1.41px solid #000000;
+    border-radius: 0;
 }
-input.massageBox  {
+textarea.massageBox  {
     height: 194px;
-    border: 1.41px 0px 0px 0px;
+    
 }
 
 .formContainer{
@@ -65,8 +63,8 @@ input.massageBox  {
 .mailLable{
     padding-bottom: 18px;
 }
-.nameBox, .mailBox, .massageBox{
-    margin-bottom: 20px;
+.nameBox, .mailBox{
+    margin-bottom: 15px
 }
 .mailContainer button{
     width: 210.83px; 
@@ -78,4 +76,5 @@ input.massageBox  {
     line-height: 32.68px;
     text-align: center;
     border: 1px solid #000000;
+    margin-top:10px ;
 }

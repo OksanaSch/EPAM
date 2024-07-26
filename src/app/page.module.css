@@ -19,18 +19,17 @@
   justify-content: space-around;
   width: 100%;
   margin-bottom: 30px;
-  padding-left: 25px;
-  padding-right: 25px;
+  /* padding-left: 25px;
+  padding-right: 25px; */
 }
 
 .card {
   margin: 0 10px;
-  list-style-type: none;
   text-align: center;
 }
 
 .card h5 {
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-size: 16px;
   font-weight: 600;
   line-height: 18.78px;
@@ -49,3 +48,84 @@
   text-align: start;
   margin-top: 7px;
 }
+
+@media (min-width: 700px) and (max-width: 1320px) {
+  .facultyLife{
+    padding: 0 10px;
+  }
+  .facultyLife  h3 {
+  padding-top: 20px;
+  font-size: 33.64px;
+  line-height: 39.49px;
+  text-align: center;
+  }
+  .cards{
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  .card h5{
+    margin: 30px 0;
+    font-size: 22.43px;
+    line-height: 26.33px;
+    text-align: center;
+  }
+  .card img{
+    width: 80% ;
+    height: auto;
+    }
+    .card p{
+      font-size: 21px;
+      line-height: 24.65px;
+      text-align: justify;
+      width: 80%;
+      height: auto;
+      margin: auto;
+      padding-top: 22px;
+      }
+}
+
+
+
+@media(max-width: 700px){
+  .facultyLife{
+    padding: 0 10px;
+  }
+  .facultyLife  h3 {
+    font-size: 20px;
+    line-height: 23.48px;
+    font-weight: 800;
+    padding-top: 20px;
+  
+  }
+  .card h5 {
+    margin: 15px 0;
+    font-size: 18px;
+    line-height: 21.13px;
+  }
+
+.card p{
+    font-size: 12px;
+    line-height: 14.09px;
+    text-align: justify;
+    width: 100%;
+    height: auto;
+    }
+
+  .cards{
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
+    padding: 0;
+  }
+
+  .card img{
+  width: 100%;
+  height: auto;
+  }
+  .card p{
+    max-width: 100%;
+  }
+}
+
+
