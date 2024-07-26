@@ -39,7 +39,7 @@
 	border: 1.41px solid #000000;
 }
 
-.searchResults button {
+.searchResults .searchPublicationButton {
 	width: 210.83px;
 	height: 78.71px;
 	background-color: #D9D9D9;
