@@ -1,7 +1,7 @@
 
 "use client"
 import { useState } from 'react';
-import { Container, Row, Col, } from "react-bootstrap";
+
 import {
 	contactsContainer,
 	contacts,
@@ -11,11 +11,12 @@ import {
 	mailContainer,
 	formContainer,
 	formLables,
-	nameLable,
-	mailLable,
 	nameBox,
 	mailBox,
 	massageBox,
+	forms,
+	map,
+	mainSection
 } from "./page.module.css"
 import Form from 'react-bootstrap/Form';
 
@@ -38,13 +39,14 @@ export default function Contacts () {
 
 	return (
 	
-			<Row className={contactsContainer}>
-				<Col className='p-0' sm={6}>
+			<main className={contactsContainer}>
+				<section className={mainSection}>
 				
 					<section className={contacts}>
 						<h1>Контакти</h1>
-						<p>Національний університет сингулярних технологій,<br></br> 02000, Україна, м. Київ, вул. Хрещатик, 1</p>
 						<p className={adressTitle}>Адреса:</p>
+						<p>Національний університет сингулярних технологій,<br></br> 02000, Україна, м. Київ, вул. Хрещатик, 1</p>
+						
 						<p className={phoneTitle}>Телефон:</p>
 						<p>+38 (044) 123-45-67</p>
 						<p className={mailTitle}>Електронна пошта:</p>
@@ -53,28 +55,21 @@ export default function Contacts () {
 					<section className={mailContainer}>
 						
 						<h2>Написати нам</h2>					
-						<Form noValidate validated={validated} onSubmit={handleSubmit}>    
-							<Row>
-							<div className={formContainer}>
-								<Col sm={3} >
-									<div className={formLables}>
-									<Form.Label className={nameLable}>Ім'я</Form.Label>
-									<Form.Label className={mailLable}>Електронна адреса</Form.Label>
-									<Form.Label className={mailLable}>Повідомлення</Form.Label>						
-									</div>
-								</Col>
-								<Col sm={9}>
-								<Form.Group controlId="validationCustom01">
-									<Form.Control  className={nameBox}  required type="text"/>
-									<Form.Control className={mailBox}  required type="email"/>
-									<Form.Control className={massageBox}  required as="textarea" rows={3} ></Form.Control>
-									<Form.Control.Feedback type="invalid">
-										Будь-ласка, заповніть усі поля  правильно!
-									</Form.Control.Feedback>									
-									</Form.Group>
-								</Col>
+						<Form noValidate validated={validated} onSubmit={handleSubmit}> 
+						<div className={formContainer}>
+						<div className={forms}>
+							<Form.Label className={formLables}>Ім'я</Form.Label>
+							<Form.Control  className={nameBox}  required type="text"/>
 							</div>
-							</Row>
+							<div className={forms}>
+							<Form.Label className={formLables}>Електронна <br></br> адреса</Form.Label>
+							<Form.Control className={mailBox}  required type="email"/>
+							</div>
+							<div className={forms}>
+							<Form.Label className={formLables}>Повідомлення</Form.Label>		
+							<Form.Control className={massageBox}  required as="textarea" rows={3} ></Form.Control>
+							</div>
+							</div>
 							<button type="submit">Надіслати</button>
 					</Form>
 					
@@ -82,13 +77,13 @@ export default function Contacts () {
 				</section>
 				
 					
-				</Col>
-				<Col sm={6} className="p-0"  >
+				</section>
+				<section className={map}>
 				
-		 		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.4486373518894!2d30.524924076557287!3d50.45136987159231!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce51c3bdb9a1%3A0xff877737cf946b28!2z0LLRg9C70LjRhtGPINCl0YDQtdGJ0LDRgtC40LosIDEsINCa0LjRl9CyLCAwMjAwMA!5e0!3m2!1suk!2sua!4v1721109039187!5m2!1suk!2sua" width="984" height="942"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		 		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.4486373518894!2d30.524924076557287!3d50.45136987159231!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce51c3bdb9a1%3A0xff877737cf946b28!2z0LLRg9C70LjRhtGPINCl0YDQtdGJ0LDRgtC40LosIDEsINCa0LjRl9CyLCAwMjAwMA!5e0!3m2!1suk!2sua!4v1721109039187!5m2!1suk!2sua" width="970" height="962"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 		 	
-				</Col>
-			</Row>
+				</section>
+			</main>
 		
 		//  
 	)
