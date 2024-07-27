@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
 
 env:
-  APPLICATION_PUBLISH_PROFILE: ${{ secrets.OLEKSANDRWEB }}
+  APPLICATION_PUBLISH_PROFILE: "OLEKSANDRWEB"
   WEBAPP_NAME: "EPAM"
 
 jobs:
