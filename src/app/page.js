@@ -27,10 +27,10 @@ export default async function Home() {
 
 				<Hero image={heroImage } header={data[0].header} textAbstracts={data[0].textAbstracts} />
 				<section className={facultyLife}>
-					<h3>Життя кафедри</h3>
+					<h1>Життя кафедри</h1>
 					<ul className={cards}>
 						<li className={card}>
-							<h5>Міжнародна діяльність кафедри</h5>
+							<h2>Міжнародна діяльність кафедри</h2>
 							<Image
 								width={305}
 								height= {180}
@@ -43,7 +43,7 @@ export default async function Home() {
               				</p>
 						</li>
 						<li className={card}>
-							<h5>Студентські R&D проєкти</h5>
+							<h2>Студентські R&D проєкти</h2>
 							<Image
 								width={305}
 								height= {180}
@@ -57,7 +57,7 @@ export default async function Home() {
 							</p>
 						</li>
 						<li className={card}>
-							<h5>Громадське життя студентської спільноти</h5>
+							<h2>Громадське життя студентської спільноти</h2>
 							<Image
 								width={305}
 								height= {180}

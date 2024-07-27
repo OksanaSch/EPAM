@@ -26,7 +26,7 @@ export default function Header() {
 		<header>
 			<Navbar expand="custom"  className={headerContainer} >
 			<Link href="/">
-				<Image className={ logo} src={laptop}  alt="go to homepage"/>
+				<Image className={ logo} src={laptop}  alt="на головну"/>
 			</Link>
 					<h2 className={mainHeader}>
             Кафедра <br /> “Кібернетика та штучний інтелект”
