@@ -15,10 +15,10 @@ const articles = await getArticles();
 export default function Page() {
 
 	return (
-		<>
+		<main>
 			<BackToArticlesButton/>
 			<CompleteArticle articles={ articles} />
 
-		</>
+		</main>
 	)
 };
