@@ -58,7 +58,7 @@ export default function Contacts () {
 						<Form noValidate validated={validated} onSubmit={handleSubmit}> 
 						<div className={formContainer}>
 						<div className={forms}>
-							<Form.Label className={formLables}>Ім'я</Form.Label>
+							<Form.Label className={formLables}>Ім&apos;я</Form.Label>
 							<Form.Control  className={nameBox}  required type="text"/>
 							</div>
 							<div className={forms}>
