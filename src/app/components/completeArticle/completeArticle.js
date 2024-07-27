@@ -7,6 +7,7 @@ import {
 	downloadButtonContainer,
 	downloadButton,
 	completeArticle,
+	articleText,
 	aboutArticle,
 	autorArticle,
 } from "./completeArticle.module.css";
@@ -29,10 +30,9 @@ export default function CompleteArticle({ articles }) {
 				<p className={autorArticle}>Автор: <span>{article?.author}</span></p>
 				<p>Дата публікації: <span>18/03/2024</span></p>
 				</div>
-				<p>Категорія публікації: <span>Нанотехнології та квантові обчислення</span></p>
-			<ul>
-				<li>{ article?.text}</li>
-			</ul>
+			<p>Категорія публікації: <span>Нанотехнології та квантові обчислення</span></p>
+			<p className={articleText}>{ article?.text}</p>
+
 			<div className={downloadButtonContainer}>
 					<button className={downloadButton}>
 						<svg width="65" height="27" viewBox="0 0 65 27" fill="none" xmlns="http://www.w3.org/2000/svg">

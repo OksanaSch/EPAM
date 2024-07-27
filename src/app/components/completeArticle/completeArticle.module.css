@@ -42,9 +42,10 @@
 	font-weight: 400;
 }
 
-.completeArticle ul {
+section .articleText {
 	padding-top: 20px;
-
+	text-align: left;
+	font-weight:500;
 }
 
 .downloadButtonContainer {
@@ -84,6 +85,11 @@
 		font-weight: 700;
 		padding: 0 50px;
 	}
+
+	section .articleText {
+		font-weight: 500;
+	}
+
 	.downloadButton{
 		width: 219px;
 		height: 46px;
@@ -100,7 +106,7 @@
 	.aboutArticle{
 		display: block;
 		align-items: center;
-		
+
 	}
 	.autorArticle {
 		text-align: center;
@@ -112,14 +118,14 @@
 	.completeArticle{
 		padding: 0 60px;
 	}
-	.completeArticle h1{		
+	.completeArticle h1{
 		font-size: 38px;
 		line-height: 44.61px;
 	}
 	.aboutArticle{
 		display: block;
 		align-items: center;
-		
+
 	}
 	.autorArticle {
 		text-align: center;
