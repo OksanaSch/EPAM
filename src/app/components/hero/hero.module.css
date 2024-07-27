@@ -15,29 +15,29 @@
 .heroGreeting {
 	padding-top: 18px;
 	padding-bottom: 11px;
-	margin-left: 46px;
+	margin:0 71px;
 	color: var(--background-header-footer);
 	font-family: Raleway,sans-serif;
-	font-size: 28px;
+	font-size: 33px;
 	font-weight: 800;
-	line-height: 32.87px;
-	text-align: left;
+	line-height: 42.26px;
+	text-align: center;
 
 }
 
 .heroListItem {
-	margin-left: 60px;
-	padding-right: 60px;
+	padding: 0 70px;
 	margin-bottom: 10px;
-	font-size: 15px;
-	font-weight: 600;
-	line-height: 20.43px;
-	text-align: justified;
+	text-align: justify;
 	text-indent: 20px;
+	font-family: Open Sans, sans-serif;
+	font-size: 21.02px;
+	font-weight: 600;
+	line-height: 28.63px;
 }
 
 .imageTechnologies {
-	width: 50%;
+	width: 60%;
 	height: auto;
 }
 @media(max-width:1320px){
@@ -60,7 +60,7 @@
 		text-align: center;
 		padding-top: 20px;
 		padding-bottom: 15px;
-		margin-left: 0;
+		margin: 0 40px;
 	}
 	.heroListItem {
 		padding: 0;
@@ -97,7 +97,7 @@
 		text-align: center;
 		padding-top: 10px;
 		padding-bottom: 6px;
-		margin-left: 0;
+		margin: 0 20px;
 	}
 	.heroListItem {
 		padding: 0;
