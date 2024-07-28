@@ -10,7 +10,7 @@ import {
 	searchPublication,
 	searchHeader,
 	centeredForm,
-	allArticlessHeader,
+	allArticlesHeader,
 	publicationArticles
 } from "./page.module.css";
 
@@ -47,7 +47,7 @@ export default function ScientificArticles() {
    				 </section>
 
 
-			<h1 className={allArticlessHeader}>Усі публікації факультету </h1>
+			<h1 className={allArticlesHeader}>Усі публікації факультету </h1>
 			<section className={publicationArticles}>
 
 

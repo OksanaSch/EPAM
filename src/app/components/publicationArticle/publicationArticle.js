@@ -33,9 +33,9 @@ export default function PublicationArticle({ articles }) {
 					<p className={textArticle}>
 						{article.text}
 					</p>
-					<button className={readMoreButton}>
-						<Link href={`/scientificArticles/${article.id}`}>Читати далі</Link>
-					</button>
+					<Link href={`/scientificArticles/${article.id}`}><button className={readMoreButton}>
+						Читати далі
+					</button></Link>
 				</li>
 				)}
 				</ul>

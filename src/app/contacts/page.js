@@ -61,7 +61,7 @@ export default function Contacts () {
 					<Form noValidate validated={validated} onSubmit={handleSubmit} className={contactsForm}>
 						{/* <div className={formContainer}> */}
 						<div className={forms}>
-							<Form.Label className={formLables}>Ім'я</Form.Label>
+							<Form.Label className={formLables}>Ім&apos;я</Form.Label>
 							<Form.Control  className={nameBox}  required type="text"/>
 							</div>
 							<div className={forms}>
@@ -113,9 +113,9 @@ export default function Contacts () {
 
 						<h2>Написати нам</h2>
 					<Form noValidate validated={validated} onSubmit={handleSubmit} className={contactsForm}>
-						{/* <div className={formContainer}> */}
+
 						<div className={forms}>
-							<Form.Label className={formLables}>Ім'я</Form.Label>
+							<Form.Label className={formLables}>Ім&apos;я</Form.Label>
 							<Form.Control  className={nameBox}  required type="text"/>
 							</div>
 							<div className={forms}>
@@ -126,7 +126,7 @@ export default function Contacts () {
 							<Form.Label className={formLables}>Повідомлення</Form.Label>
 							<Form.Control className={messageBox}  required as="textarea" rows={3} ></Form.Control>
 							</div>
-							{/* </div> */}
+
 							<button type="submit" className={mailContainerButton}>Надіслати</button>
 					</Form>
 
