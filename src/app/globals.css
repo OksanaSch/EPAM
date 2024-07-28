@@ -55,7 +55,7 @@ body {
 
 body {
   color: rgb(var(--foreground-rgb));
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
 
 }
 
