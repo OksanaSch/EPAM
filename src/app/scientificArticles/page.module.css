@@ -23,13 +23,22 @@
     padding-top: 20px;
 }
 
-.allArticlessHeader {
+.allArticlesHeader {
     margin: 50px auto;
     color: var(--background-header-footer);
+    font-weight: 800;
+    font-size: 56px;
 }
 
 .centeredForm {
     justify-content: center;
+}
+
+@media(max-width: 1023px) {
+    .allArticlesHeader {
+        margin: 20px auto;
+        font-size: 20px;
+    }
 }
 
 @media only screen and (max-width: 1200px) {
@@ -38,7 +47,7 @@
     }
 }
 
-@media(min-width: 1200px){
+@media(min-width: 1199px){
     .searchPublication {
       height: 186px;
       text-align: center;
