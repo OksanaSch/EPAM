@@ -36,7 +36,6 @@
 
 @media(min-width: 390px) {
 .mainHeader {
-	font-size: 14px;
 	margin-left: 0;
 }
 
@@ -46,6 +45,17 @@
 	margin-left: 0;
 }
 
+}
+
+@media(max-width: 411px){
+	.logo {
+		width: 48px;
+	}
+
+	.menuButton {
+		padding: 0;
+		width: 38px;
+	}
 }
 
 @media(max-width:1023px){
@@ -63,6 +73,10 @@
 	.pageNavigation a+a {
 		padding-top: 15px;
 		margin: 0;
+	}
+
+	.mainHeader {
+		font-size: 14px;
 	}
 }
 
