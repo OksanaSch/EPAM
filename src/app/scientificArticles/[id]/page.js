@@ -15,7 +15,7 @@ const articles = await getArticles();
 export default function Page() {
 
 	return (
-		<main>
+		<main id='main'>
 			<BackToArticlesButton/>
 			<CompleteArticle articles={ articles} />
 

@@ -3,7 +3,7 @@ import "./globals.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Header from "./components/header/header";
 import Footer from "./components/footer/footer";
-import { bodyContainer } from "./layout.module.css";
+import {bodyContainer, skipLink } from "./layout.module.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,6 +16,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="uk">
 			<body className={inter.className}>
+				<a className={skipLink} href="#main">Skip to main</a>
 				<div className={bodyContainer}>
 					<Header />
 					{children}

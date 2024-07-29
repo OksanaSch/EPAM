@@ -40,7 +40,7 @@ export default function Contacts () {
 
 
 	return (
-		<main className={contactsContainer}>
+		<main id='main' className={contactsContainer}>
 			<div className={biggerScreenContainer}>
 				<section className={mainSection}>
 
@@ -61,16 +61,16 @@ export default function Contacts () {
 					<Form noValidate validated={validated} onSubmit={handleSubmit} className={contactsForm}>
 						{/* <div className={formContainer}> */}
 						<div className={forms}>
-							<Form.Label className={formLables}>Ім&apos;я</Form.Label>
-							<Form.Control  className={nameBox}  required type="text"/>
+							<Form.Label htmlFor='nameInput' className={formLables}>Ім&apos;я</Form.Label>
+							<Form.Control id='nameInput' className={nameBox}  required type="text"/>
 							</div>
 							<div className={forms}>
-							<Form.Label className={formLables}>Електронна адреса</Form.Label>
-							<Form.Control className={mailBox}  required type="email"/>
+							<Form.Label  htmlFor='mailInput' className={formLables}>Електронна адреса</Form.Label>
+							<Form.Control id='mailInput' className={mailBox}  required type="email"/>
 							</div>
 							<div className={forms}>
-							<Form.Label className={formLables}>Повідомлення</Form.Label>
-							<Form.Control className={messageBox}  required as="textarea" rows={3} ></Form.Control>
+							<Form.Label htmlFor='massageInput' className={formLables}>Повідомлення</Form.Label>
+							<Form.Control id='massageInput' className={messageBox}  required as="textarea" rows={3} ></Form.Control>
 							</div>
 							{/* </div> */}
 							<button type="submit" className={mailContainerButton}>Надіслати</button>

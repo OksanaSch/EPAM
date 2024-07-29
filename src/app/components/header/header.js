@@ -26,6 +26,7 @@ export default function Header() {
 
 	return (
 		<header>
+
 			<Navbar expand="custom" expanded={expanded}  className={headerContainer} >
 			<Link href="/">
 				<Image className={ logo} src={laptop}  alt="на головну"/>
@@ -33,7 +34,7 @@ export default function Header() {
 					<h2 className={mainHeader}>
             Кафедра <br /> “Кібернетика та штучний інтелект”
           </h2>
-			<Navbar.Toggle  onClick={() => setExpanded(!expanded)} className={menuButton} aria-controls="basic-navbar-nav" />
+			<Navbar.Toggle   className={menuButton} aria-controls="basic-navbar-nav" />
 				<Navbar.Collapse id="basic-navbar-nav" style={{ color: "white" }}>
 					<Nav className={pageNavigation}>
 						<Link href="/" className={`${pathname === '/' ? 'activeLink' : ''}`} onClick={() => setExpanded(!expanded)}>

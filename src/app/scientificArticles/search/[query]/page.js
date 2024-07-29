@@ -15,11 +15,11 @@ export default function Page() {
 	const searchRequest = params.query.slice(8);
 
 	return (
-		<section className={searchResults}>
+		<main id='main' className={searchResults}>
 			<BackToArticlesButton />
 				<h1 className={searchResultsHeader}>Результати пошуку</h1>
 			<p className={searchResultsNumber}>За пошуковим запитом <span className={query}>&quot;{ searchRequest}&quot;</span> було знайдено 0 результат(ів)</p>
 					<SearchPublication />
-				</section>
+				</main>
 	)
 };

@@ -28,6 +28,7 @@
     color: var(--background-header-footer);
     font-weight: 800;
     font-size: 56px;
+    text-align: center;
 }
 
 .centeredForm {
