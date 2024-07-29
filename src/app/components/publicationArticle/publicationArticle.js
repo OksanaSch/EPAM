@@ -17,7 +17,7 @@ export default function PublicationArticle({ articles }) {
 	const [articlesData, setArticlesData] = useState([])
 	useEffect(() => {
 		setArticlesData(articles)
-	}, []);
+	}, [articles]);
 
 	const { paginatedData, nextPage, lastPage } = useDataPaginate(articlesData, 6);
 	return (

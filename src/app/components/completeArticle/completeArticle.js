@@ -28,9 +28,9 @@ export default function CompleteArticle({ articles }) {
 				<h1>{article?.title}</h1>
 				<div className={aboutArticle}>
 				<p className={autorArticle}>Автор: <span>{article?.author}</span></p>
-				<p>Дата публікації: <span>18/03/2024</span></p>
+				<p>Дата публікації: <span>{article?.date}</span></p>
 				</div>
-			<p>Категорія публікації: <span>Нанотехнології та квантові обчислення</span></p>
+			<p>Категорія публікації: <span>{article?.category}</span></p>
 			<p className={articleText}>{ article?.text}</p>
 
 			<div className={downloadButtonContainer}>

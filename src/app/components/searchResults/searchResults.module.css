@@ -1,0 +1,30 @@
+.searchResultsHeader {
+	font-family: Raleway, sans-serif;
+	font-size: 67px;
+	font-weight: 800;
+	line-height: 80px;
+	text-align: center;
+	color: #044FB1;
+}
+
+.searchResultsNumber {
+	margin: 28px 0 30px;
+}
+
+.query {
+	font-weight: 600;
+}
+
+@media(max-width: 768px) {
+	.searchResultsHeader {
+		font-size: 32px;
+		line-height: 38px;
+	}
+
+	.searchResultsNumber {
+		font-size: 12px;
+		font-weight: 500;
+		line-height: 16px;
+		margin: 15px 0 20px;
+	}
+}
