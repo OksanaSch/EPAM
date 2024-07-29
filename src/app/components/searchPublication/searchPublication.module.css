@@ -21,6 +21,11 @@
     font-weight: 400;
     line-height: 27.24px;
   }
+  .searchPublicationButton:disabled {
+    background-color:#D9D9D9;
+    cursor: not-allowed;
+}
+
 
   @media(max-width: 650px) {
     .searchPublicationInput {
