@@ -26,8 +26,13 @@
 	display: inline-block;
 }
 
-.pageNavigation a:hover {
-	color: #f5c04f;;
+.pageNavigation a:hover,
+.pageNavigation a:focus{
+	color: aquamarine;
+}
+
+.pageNavigation a:focus {
+	border: 1px solid aquamarine;
 }
 
 .menuButton{

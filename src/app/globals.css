@@ -76,13 +76,20 @@ ul {
   padding: 0;
 }
 
+.nav-link {
+  color: white;
+  font-weight: 800;
+}
+
+.navbar-nav .nav-link.active {
+  color: white;
+}
 
 .activeLink {
   color: #f5c04f;
   text-decoration: underline;
   font-weight: 800;
 }
-
 
 .navbar-toggler.collapsed .navbar-toggler-icon {
   background-image: url("/svg/hamburger-menu-closed.svg");
