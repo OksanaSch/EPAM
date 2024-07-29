@@ -22,35 +22,37 @@ import Link from "next/link";
 export default function Header() {
 	const pathname = usePathname();
 	const [expanded, setExpanded] = useState(false);
+	const handleSelect = (eventKey) => setExpanded(false);
 
 
 	return (
 		<header>
-			<Navbar expand="custom" expanded={expanded}  className={headerContainer} >
+
+			<Navbar expand="custom"  className={headerContainer} >
 			<Link href="/">
 				<Image className={ logo} src={laptop}  alt="на головну"/>
 			</Link>
 					<h2 className={mainHeader}>
             Кафедра <br /> “Кібернетика та штучний інтелект”
           </h2>
-			<Navbar.Toggle  onClick={() => setExpanded(!expanded)} className={menuButton} aria-controls="basic-navbar-nav" />
+			<Navbar.Toggle   className={menuButton} aria-controls="basic-navbar-nav" />
 				<Navbar.Collapse id="basic-navbar-nav" style={{ color: "white" }}>
-					<Nav className={pageNavigation}>
-						<Link href="/" className={`${pathname === '/' ? 'activeLink' : ''}`} onClick={() => setExpanded(!expanded)}>
+					<Nav className={pageNavigation} eventKey="1" onSelect={handleSelect}>
+						<Nav.Link href="/"  eventKey="1" className={`${pathname === '/' ? 'activeLink' : ''}`} >
 								Про кафедру
-						</Link>
-							<Link href="" onClick={() => setExpanded(!expanded)}>
+						</Nav.Link>
+							<Nav.Link href=""  eventKey="2">
 									Новини
-							</Link>
-							<Link  href="" onClick={() => setExpanded(!expanded)}>
+							</Nav.Link>
+							<Nav.Link  href=""  eventKey="3">
 									Адміністрація
-							</Link>
-							<Link href="/scientificArticles" className={`${pathname.includes('/scientificArticles') ? 'activeLink' : ''}`} onClick={() => setExpanded(!expanded)}>
+							</Nav.Link>
+							<Nav.Link href="/scientificArticles"  eventKey="4" className={`${pathname.includes('/scientificArticles') ? 'activeLink' : ''}`} >
 									Наукова робота
-							</Link>
-							<Link href="/contacts" className={`${pathname === '/contacts' ? 'activeLink' : ''}`} onClick={() => setExpanded(!expanded)}>
+							</Nav.Link>
+							<Nav.Link href="/contacts"  eventKey="5" className={`${pathname === '/contacts' ? 'activeLink' : ''}`} >
 									Контакти
-							</Link>
+							</Nav.Link>
 
 					</Nav>
 				</Navbar.Collapse>
