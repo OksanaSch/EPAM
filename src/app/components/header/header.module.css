@@ -1,3 +1,11 @@
+.skipLink{
+	position: absolute;
+	top:0;
+	left:10000px;
+}
+.skipLink:focus{
+	left: 0;
+}
 .Container{
 	background-color: var(--background-header-footer);
 }

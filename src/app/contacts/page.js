@@ -40,7 +40,7 @@ export default function Contacts () {
 
 
 	return (
-		<main className={contactsContainer}>
+		<main id='main' className={contactsContainer}>
 			<div className={biggerScreenContainer}>
 				<section className={mainSection}>
 

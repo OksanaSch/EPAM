@@ -38,7 +38,7 @@ export default function SearchPublication({onSubmit}) {
 						value={searchRequest}
 						onChange={handleRequestChange}
 						autoComplete="off"
-          	autoFocus
+          	// autoFocus
           	placeholder="Введіть назву або ключове слово"
 						aria-label="Search"
 							></input>

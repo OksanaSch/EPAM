@@ -11,6 +11,7 @@ import Navbar from 'react-bootstrap/Navbar';
 
 
 import {
+	skipLink,
 	headerContainer,
 	logo,
 	mainHeader,
@@ -26,6 +27,7 @@ export default function Header() {
 
 	return (
 		<header>
+			<a className={skipLink} href="#main">Skip to main</a>
 			<Navbar expand="custom" expanded={expanded}  className={headerContainer} >
 			<Link href="/">
 				<Image className={ logo} src={laptop}  alt="на головну"/>
