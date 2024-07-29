@@ -1,9 +1,9 @@
 "use client";
-import Link from "next/link";
+import { useRouter } from 'next/navigation';
 import {
 	articlesList,
 	articleTitle,
-  authorArticle,
+    authorArticle,
 	textArticle,
 	articleItem,
 	readMoreButton
@@ -14,14 +14,16 @@ import { useEffect, useState } from "react";
 import DownloadButton from "../downloadButton/downloadButton";
 
 export default function PublicationArticle({ articles }) {
+	const router = useRouter();
 	const [articlesData, setArticlesData] = useState([])
+	
 	useEffect(() => {
 		setArticlesData(articles)
 	}, []);
 
 	const { paginatedData, nextPage, lastPage } = useDataPaginate(articlesData, 6);
 	return (
-		<>
+		<section>
 				<ul className={articlesList}>
 			{paginatedData?.map(article =>
 				<li className={articleItem}
@@ -33,14 +35,15 @@ export default function PublicationArticle({ articles }) {
 					<p className={textArticle}>
 						{article.text}
 					</p>
-					<Link href={`/scientificArticles/${article.id}`}><button className={readMoreButton}>
+					<button className={readMoreButton}
+					onClick={() => router.push(`/scientificArticles/${article.id}`)}>
 						Читати далі
-					</button></Link>
+					</button>
 				</li>
 				)}
 				</ul>
 			< DownloadButton nextPage={nextPage} lastPage={ lastPage} />
-			</>
+			</section>
 
 
     );
