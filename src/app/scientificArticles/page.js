@@ -5,6 +5,7 @@ import heroImage from "../../../public/img/Nauka.png";
 import { promises as fs } from 'fs';
 import SearchPublication from "../components/searchPublication/searchPublication";
 import PublicationArticle from "../components/publicationArticle/publicationArticle";
+import getArticles from "../components/hooks/getArticles";
 
 import {
 	searchPublication,
@@ -21,15 +22,6 @@ async function getData() {
   const data = JSON.parse(file);
   return data;
 }
-
-async function getArticles() {
- const path = process.cwd() + "/src/app/articles.json"
-  const file = await fs.readFile(path, "utf8");
-  const data = JSON.parse(file);
-  return data;
-}
-
-
 	const data = await getData();
 	const articles = await getArticles();
 
@@ -51,7 +43,7 @@ export default function ScientificArticles() {
 			<section className={publicationArticles}>
 
 
-					<PublicationArticle articles={ articles} />
+					<PublicationArticle articles={ articles}/>
 
 
 			</section>

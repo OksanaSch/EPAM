@@ -8,7 +8,7 @@ import {
 	searchPublicationButton
 } from "./searchPublication.module.css";
 
-export default function SearchPublication({onSubmit}) {
+export default function SearchPublication({}) {
 	const [searchRequest, setSearchRequest] = useState('');
 	const router = useRouter()
     const handleRequestChange = event => {
@@ -18,12 +18,7 @@ export default function SearchPublication({onSubmit}) {
   const handleSubmit = event => {
     event.preventDefault();
 
-		if (searchRequest.trim() === '' || searchRequest.length > 3) {
-      <p>Type in your search request</p>;
-      return;
-    }
 
-  onSubmit(searchRequest);
   setSearchRequest('');
 
 	};
