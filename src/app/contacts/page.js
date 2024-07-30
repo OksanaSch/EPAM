@@ -109,24 +109,24 @@ export default function Contacts () {
 			</section>
 
 				</section>
-						<section className={mailContainer}>
+												<section className={mailContainer}>
 
 						<h2>Написати нам</h2>
 					<Form noValidate validated={validated} onSubmit={handleSubmit} className={contactsForm}>
-
+						{/* <div className={formContainer}> */}
 						<div className={forms}>
-							<Form.Label className={formLables}>Ім&apos;я</Form.Label>
-							<Form.Control  className={nameBox}  required type="text"/>
+							<Form.Label for='nameInput2' className={formLables}>Ім&apos;я</Form.Label>
+							<Form.Control id='nameInput2' className={nameBox}  required type="text"/>
 							</div>
 							<div className={forms}>
-							<Form.Label className={formLables}>Електронна адреса</Form.Label>
-							<Form.Control className={mailBox}  required type="email"/>
+							<Form.Label  for='mailInput2' className={formLables}>Електронна адреса</Form.Label>
+							<Form.Control id='mailInput2' className={mailBox}  required type="email"/>
 							</div>
 							<div className={forms}>
-							<Form.Label className={formLables}>Повідомлення</Form.Label>
-							<Form.Control className={messageBox}  required as="textarea" rows={3} ></Form.Control>
+							<Form.Label for='massageInput2' className={formLables}>Повідомлення</Form.Label>
+							<Form.Control id='massageInput2' className={messageBox}  required as="textarea" rows={3} ></Form.Control>
 							</div>
-
+							{/* </div> */}
 							<button type="submit" className={mailContainerButton}>Надіслати</button>
 					</Form>
 
