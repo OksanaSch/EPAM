@@ -89,6 +89,7 @@ ul {
   color: #f5c04f;
   text-decoration: underline;
   font-weight: 800;
+  text-underline-offset: 10px;
 }
 
 .navbar-toggler.collapsed .navbar-toggler-icon {
