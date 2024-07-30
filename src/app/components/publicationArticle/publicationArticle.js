@@ -28,7 +28,7 @@ export default function PublicationArticle({ articles }) {
 			{paginatedData?.map(article =>
 				<li className={articleItem}
 					key={article.id}>
-					<h4 className={articleTitle}>{article.title}</h4>
+					<h2 className={articleTitle}>{article.title}</h2>
 					<p className={authorArticle}>
 						Автор: <span>{article.author}</span>
 					</p>
