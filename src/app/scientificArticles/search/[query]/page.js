@@ -15,8 +15,10 @@ export default function Page() {
 
 
 	return (
-		<section className={searchResults}>
+
+		<main id='main' className={searchResults}>
 			<SearchResults articles={ articles} />
-				</section>
+				</main>
+
 	)
 };

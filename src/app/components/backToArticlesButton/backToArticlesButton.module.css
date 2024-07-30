@@ -11,12 +11,8 @@
 	display: flex;
 	gap: 11px;
 	align-items: center;
-}
-
-.linkBack {
 	padding: 20px 25px;
 }
-
 
 .buttonBackSvg {
 	width: 41px;
@@ -29,17 +25,15 @@
 		margin: 45px 0 16px 35px;
 		width: 219px;
 		font-size: 14px;
+		padding: 10px;
 	}
 
-	.linkBack {
-		padding: 14px 18px 15px 21px;
-	}
 
 	.buttonBackSvg {
 		width: 20px;
 		height: 11px;
 
-		margin-right: 11px;
+		/* margin-right: 11px; */
 	}
 
  }

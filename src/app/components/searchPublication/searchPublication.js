@@ -1,7 +1,6 @@
 'use client';
-
+import { useRouter } from 'next/navigation'
 import { useState } from 'react';
-import Link from 'next/link';
 
 import {
 	searchPublicationForm,
@@ -11,8 +10,8 @@ import {
 
 export default function SearchPublication({}) {
 	const [searchRequest, setSearchRequest] = useState('');
-
-  const handleRequestChange = event => {
+	const router = useRouter()
+    const handleRequestChange = event => {
     setSearchRequest(event.currentTarget.value.toLowerCase());
   };
 
@@ -33,12 +32,16 @@ export default function SearchPublication({}) {
 						value={searchRequest}
 						onChange={handleRequestChange}
 						autoComplete="off"
-          	autoFocus
+          	// autoFocus
           	placeholder="Введіть назву або ключове слово"
 						aria-label="Search"
 							></input>
-					<button type="submit" className={searchPublicationButton}>
-						<Link href={`/scientificArticles/search/query=${searchRequest}`}>Шукати</Link>
+					<button 
+					type="submit"
+		  			onClick={() => router.push(`/scientificArticles/search/query=${searchRequest}`)}
+          			disabled={searchRequest.length < 3} 
+					 className={searchPublicationButton}>
+					Шукати
 					</button>
 					</form>
 

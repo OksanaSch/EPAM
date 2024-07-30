@@ -28,7 +28,7 @@ async function getData() {
 export default function ScientificArticles() {
 
 	return (
-		<>
+		<main id='main'>
 
 			<Hero image={heroImage} header={data[1].header} textAbstracts={data[1].textAbstracts} />
 			<section className={searchPublication}>
@@ -48,6 +48,6 @@ export default function ScientificArticles() {
 
 			</section>
 
-		</>
+		</main>
 	)
 }
